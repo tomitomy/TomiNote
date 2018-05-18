@@ -1,5 +1,27 @@
 
-TomiNote v1.1
+![01](https://github.com/tomitomy/TomiNote/blob/master/resources/images/01.png)
+
+　
+
+![02](https://github.com/tomitomy/TomiNote/blob/master/resources/images/02.png)
+
+　
+
+![03](https://github.com/tomitomy/TomiNote/blob/master/resources/images/03.png)
+
+　
+
+![04](https://github.com/tomitomy/TomiNote/blob/master/resources/images/04.png)
+
+　
+
+![05](https://github.com/tomitomy/TomiNote/blob/master/resources/images/05.png)
+
+　
+
+![06](https://github.com/tomitomy/TomiNote/blob/master/resources/images/06.png)
+
+　
 
 TomiNote is a simple note collection tool that supports the following features:
 
@@ -117,7 +139,11 @@ You can use a diff program to compare the differences between each steps. You ca
 
 　
 
+　
+
 ============================================================
+
+　
 
 　
 
@@ -235,52 +261,6 @@ https://sourceforge.net/projects/lazarus/files/
 
 　
 
-您可以使用对比程序来比较每个步骤之间的差异。如果你愿意，你可以挑选任何一个步骤来开发另一个程序。
+你可以使用对比程序来比较每个步骤之间的差异。如果你愿意，你可以挑选任何一个步骤来开发另一个程序。
 
 　
-
-　
-
-　
-
-![01](https://github.com/tomitomy/TomiNote/blob/master/resources/images/01.png)
-
-　
-
-　
-
-　
-
-![02](https://github.com/tomitomy/TomiNote/blob/master/resources/images/02.png)
-
-　
-
-　
-
-　
-
-![03](https://github.com/tomitomy/TomiNote/blob/master/resources/images/03.png)
-
-　
-
-　
-
-　
-
-![04](https://github.com/tomitomy/TomiNote/blob/master/resources/images/04.png)
-
-　
-
-　
-
-　
-
-![05](https://github.com/tomitomy/TomiNote/blob/master/resources/images/05.png)
-
-　
-
-　
-
-　
-
-![05](https://github.com/tomitomy/TomiNote/blob/master/resources/images/06.png)

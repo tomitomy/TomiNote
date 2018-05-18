@@ -1,6 +1,4 @@
 
-TomiNote v1.1
-
 TomiNote is a simple note collection tool that supports the following features:
 
 - Directory Tree
@@ -120,8 +118,6 @@ You can use a diff program to compare the differences between each steps. You ca
 
 
 
-TomiNote v1.1
-
 TomiNote 是一个简单的笔记收集软件，它支持以下特性：
 
 - 目录树
@@ -232,7 +228,7 @@ https://sourceforge.net/projects/lazarus/files/
 添加帮助信息（这是最后一步）
 ------------------------------
 
-您可以使用对比程序来比较每个步骤之间的差异。如果你愿意，你可以挑选任何一个步骤来开发另一个程序。
+你可以使用对比程序来比较每个步骤之间的差异。如果你愿意，你可以挑选任何一个步骤来开发另一个程序。
 
 
 
