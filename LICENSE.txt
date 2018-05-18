@@ -1,0 +1,61 @@
+
+License: This program has no license (This means it belongs to the public domain), it is free for everyone. If you use the source code of this program, you only need to pay attention to the license of Lazarus and the license of the icon files.
+
+The preparation of this program is purely personal hobby, this program does not provide any guarantee, I am not responsible for the loss caused by the use of the program.
+
+You can get the source code of this program here:
+https://github.com/tomitomy/TomiNote
+
+------------------------------
+
+This program was written using Lazarus:
+http://www.lazarus-ide.org
+
+The License of Lazarus is GPL/LGPL. See Lazarus and Free Pascal sources for license details.
+
+Thanks to Lazarus Team for designing such good programming software and sharing it to everyone! Thanks to the members of Lazarus Forum for their help!
+
+------------------------------
+
+The icons used in this program are download from FatCow:
+http://www.fatcow.com/free-icons
+
+The License of the Icons is "CCBY 3.0":
+https://creativecommons.org/licenses/by/3.0/
+
+I modified some of the icons to suit the needs of my program.
+
+Thanks to FatCow for designing so many good icons and sharing them to everyone!
+
+
+
+许可证：本程序没有许可证（这意味着它属于公众领域），它对所有人都是免费的。如果你使用本程序的源代码，你只需要注意 Lazarus 的许可证和图标文件的许可证就可以了。
+
+编写本程序纯属个人爱好，本程序不提供任何担保，本人对使用本程序所造成的损失概不负责。
+
+你可以在这里获取本程序的源代码：
+https://github.com/tomitomy/TomiNote
+
+------------------------------
+
+本程序使用 Lazarus 编写：
+http://www.lazarus-ide.org
+
+Lazarus 的许可证是 GPL/LGPL。有关许可证的详细信息，请参阅 Lazarus 和 Free Pascal 的源代码文件。
+
+感谢 Lazarus 团队设计出这么好的编程软件并分享给大家！感谢 Lazarus 论坛的成员给予的帮助！
+
+------------------------------
+
+本程序所使用的图标下载自 FatCow：
+http://www.fatcow.com/free-icons
+
+图标文件的许可证是“CCBY 3.0”：
+https://creativecommons.org/licenses/by/3.0/
+
+我修改了部分图标以适应本程序的需求。
+
+感谢 FatCow 设计出这么多好图标并分享给大家！
+
+
+

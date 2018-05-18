@@ -1,0 +1,754 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Project-Id-Version: TomiNote\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"X-Generator: Poedit 1.8.7.1\n"
+
+#: tformexport.caption
+msgid "Export"
+msgstr "导出"
+
+#: tformexport.chkbaddfileext.caption
+msgid "Add file extension"
+msgstr "添加文件后缀"
+
+#: tformexport.chkbaddseparator.caption
+msgid "Add Separator"
+msgstr "添加分隔符"
+
+#: tformimport.caption
+msgid "Import"
+msgstr "导入"
+
+#: tformimport.chkbincludeentrydir.caption
+msgid "Include entry directory"
+msgstr "包含入口目录"
+
+#: tformimport.chkbincludefileext.caption
+msgid "Include file extension"
+msgstr "包含文件后缀"
+
+#: tformmain.actnabout.caption
+msgid "About(&A)"
+msgstr "关于(&A)"
+
+#: tformmain.actnaddtobehind.caption
+msgid "Add To Behind(&S)"
+msgstr "添加到之后(&S)"
+
+#: tformmain.actnaddtochildfirst.caption
+msgid "Add To Child First(&Z)"
+msgstr "添加到子节点最前(&Z)"
+
+#: tformmain.actnaddtochildlast.caption
+msgid "Add To Child Last(&X)"
+msgstr "添加到子节点最后(&X)"
+
+#: tformmain.actnaddtofront.caption
+msgid "Add To Front(&A)"
+msgstr "添加到之前(&A)"
+
+#: tformmain.actnclose.caption
+msgid "Close(&C)"
+msgstr "关闭(&C)"
+
+#: tformmain.actncollapse.caption
+msgid "Collapse(&N)"
+msgstr "收起(&N)"
+
+#: tformmain.actncopy.caption
+msgid "Copy(&C)"
+msgstr "复制(&C)"
+
+#: tformmain.actncut.caption
+msgid "Cut(&X)"
+msgstr "剪切(&X)"
+
+#: tformmain.actndeletenode.caption
+msgid "Delete Node(&E)"
+msgstr "删除节点(&E)"
+
+#: tformmain.actndeletetext.caption
+msgid "Delete(&D)"
+msgstr "删除(&D)"
+
+#: tformmain.actnemptyrecycler.caption
+msgid "Empty Recycler(&T)"
+msgstr "清空回收站(&T)"
+
+#: tformmain.actnexit.caption
+msgid "Exit(&X)"
+msgstr "退出(&X)"
+
+#: tformmain.actnexpand.caption
+msgid "Expand(&M)"
+msgstr "展开(&M)"
+
+#: tformmain.actnexport.caption
+msgid "Export(&O) ..."
+msgstr "导出(&O) ..."
+
+#: tformmain.actnfullscreen.caption
+msgid "Full Screen(&F)"
+msgstr "全屏(&F)"
+
+#: tformmain.actnfullwindow.caption
+msgid "Full Window(&W)"
+msgstr "满窗(&W)"
+
+#: tformmain.actnhelp.caption
+msgid "Help Content(&H)"
+msgstr "帮助内容(&H)"
+
+#: tformmain.actnimport.caption
+msgid "Import(&I) ..."
+msgstr "导入(&I) ..."
+
+#: tformmain.actnmovedown.caption
+msgid "Move Down(&K)"
+msgstr "下移(&K)"
+
+#: tformmain.actnmoveleft.caption
+msgid "Move Left(&J)"
+msgstr "左移(&J)"
+
+#: tformmain.actnmoveright.caption
+msgid "Move Right(&L)"
+msgstr "右移(&L)"
+
+#: tformmain.actnmoveup.caption
+msgid "Move Up(&I)"
+msgstr "上移(&I)"
+
+#: tformmain.actnnew.caption
+msgid "New(&N) ..."
+msgstr "新建(&N) ..."
+
+#: tformmain.actnnextnode.caption
+msgid "Next Node(&N)"
+msgstr "后一节点(&N)"
+
+#: tformmain.actnnextsearchresult.caption
+msgid "Next Search Result(&N)"
+msgstr "后一搜索结果(&N)"
+
+#: tformmain.actnopen.caption
+msgid "Open(&O) ..."
+msgstr "打开(&O) ..."
+
+#: tformmain.actnoptions.caption
+msgid "Options(&T) ..."
+msgstr "选项(&T) ..."
+
+#: tformmain.actnpaste.caption
+msgid "Paste(&V)"
+msgstr "粘贴(&V)"
+
+#: tformmain.actnprevnode.caption
+msgid "Prev Node(&P)"
+msgstr "前一节点(&P)"
+
+#: tformmain.actnprevsearchresult.caption
+msgid "Previous Search Result(&P)"
+msgstr "前一搜索结果(&P)"
+
+#: tformmain.actnrecyclenode.caption
+msgid "Recycle Node(&D)"
+msgstr "回收节点(&D)"
+
+#: tformmain.actnredo.caption
+msgid "Redo(&R)"
+msgstr "重做(&R)"
+
+#: tformmain.actnrename.caption
+msgid "Rename(&R)"
+msgstr "重命名(&R)"
+
+#: tformmain.actnrestorenode.caption
+msgid "Restore Node(&E)"
+msgstr "恢复节点(&E)"
+
+#: tformmain.actnsave.caption
+msgid "Save(&S)"
+msgstr "保存(&S)"
+
+#: tformmain.actnsaveas.caption
+msgid "Save As(&A) ..."
+msgstr "另存为(&A) ..."
+
+#: tformmain.actnsearch.caption
+msgid "Search(&F) ..."
+msgstr "搜索(&F) ..."
+
+#: tformmain.actnselectall.caption
+msgid "Select All(&A)"
+msgstr "全选(&A)"
+
+#: tformmain.actntoggleinfobar.caption
+msgid "InfoBar(&I)"
+msgstr "信息栏(&I)"
+
+#: tformmain.actntogglemenubar.caption
+msgid "MenuBar(&M)"
+msgstr "菜单栏(&M)"
+
+#: tformmain.actntogglerecybar.caption
+msgid "RecyBar(&R)"
+msgstr "回收站(&R)"
+
+#: tformmain.actntogglestatbar.caption
+msgid "StatBar(&S)"
+msgstr "状态栏(&S)"
+
+#: tformmain.actntoggletheme.caption
+msgid "Toggle Theme(&T)"
+msgstr "切换主题(&T)"
+
+#: tformmain.actntoggletoolbar.caption
+msgid "ToolBar(&T)"
+msgstr "工具栏(&T)"
+
+#: tformmain.actntoggletreebar.caption
+msgid "TreeBar(&D)"
+msgstr "目录树(&T)"
+
+#: tformmain.actnundo.caption
+msgid "Undo(&U)"
+msgstr "撤销(&U)"
+
+#: tformmain.actnutils.caption
+msgid "Utils(&U) ..."
+msgstr "工具(&U) ..."
+
+#: tformmain.actnwordwrap.caption
+msgid "Line Wrapping(&W)"
+msgstr "自动换行(&W)"
+
+#: tformmain.mmiclearrecentfiles.caption
+msgid "Clear Recent Files(&C)"
+msgstr "清空最近打开的文件列表(&C)"
+
+#: tformmain.mmiedit.caption
+msgid "&Edit"
+msgstr "编辑(&E)"
+
+#: tformmain.mmifile.caption
+msgid "&File"
+msgstr "文件(&F)"
+
+#: tformmain.mmihelp.caption
+msgid "&Help"
+msgstr "帮助(&H)"
+
+#: tformmain.mmilayout.caption
+msgid "Layout(&L)"
+msgstr "界面(&L)"
+
+#: tformmain.mminode.caption
+msgid "&Node"
+msgstr "节点(&N)"
+
+#: tformmain.mminote.caption
+msgid "&Text"
+msgstr "文本(&T)"
+
+#: tformmain.mmirecentfiles.caption
+msgid "Recent Files(&R)"
+msgstr "最近打开的文件(&R)"
+
+#: tformmain.mmiview.caption
+msgid "&View"
+msgstr "视图(&V)"
+
+#: tformmain.pmiscript.caption
+msgid "Script(&S)"
+msgstr "脚本(&S)"
+
+#: tformoptions.bttndefbrighttheme.caption
+msgid "Reset to default"
+msgstr "恢复默认值"
+
+#: tformoptions.caption
+msgid "Options"
+msgstr "选项"
+
+#: tformoptions.chkbdiscardhistory.caption
+msgid "Discard history to free memory (%s)"
+msgstr "丢弃历史记录以释放内存(%s)"
+
+#: tformoptions.chkbinfobarautosize.caption
+msgid "Auto-adjust the InfoBar size (%)"
+msgstr "自动调整信息栏大小（%）"
+
+#: tformoptions.chkbloadlastfile.caption
+msgid "Load the last file on startup"
+msgstr "启动时自动载入上次的文件"
+
+#: tformoptions.chkbrecybarautosize.caption
+msgid "Auto-adjust the RecyBar size (%)"
+msgstr "自动调整回收站大小（%）"
+
+#: tformoptions.chkbremovemenubaritem.caption
+msgid "Remove the \"MenuBar\" item in the context menu"
+msgstr "删除右键菜单中的“菜单栏”项目"
+
+#: tformoptions.chkbselectlastnode.caption
+msgid "Select the last node on loading"
+msgstr "载入时自动选择上次的节点"
+
+#: tformoptions.chkbswapokcancel.caption
+msgid "Swap the OK and Cancel buttons"
+msgstr "交换“确定按钮”和“取消按钮”的位置"
+
+#: tformoptions.chkbtreebarautosize.caption
+msgid "Auto-adjust the TreeBar size (%)"
+msgstr "自动调整目录树大小（%）"
+
+#: tformoptions.chkgfullwindowhidebars.caption
+msgid "The controls to hide when full window"
+msgstr "满窗时要隐藏的控件"
+
+#: tformoptions.chkgrememberwindowsize.caption
+msgid "Remember the window size"
+msgstr "记住窗口尺寸"
+
+#: tformoptions.grpbbrighttheme.caption
+msgid "Bright Theme"
+msgstr "亮色主题"
+
+#: tformoptions.grpbdarktheme.caption
+msgid "Dark Theme"
+msgstr "暗色主题"
+
+#: tformoptions.lablautobackupcount.caption
+msgid "Auto-backup files count"
+msgstr "自动备份文件数量"
+
+#: tformoptions.lablautobackupinterval.caption
+msgid "Auto-backup interval (Minutes)"
+msgstr "自动备份文件间隔（分钟）"
+
+#: tformoptions.lablautosaveinterval.caption
+msgid "Auto-save interval (Minutes)"
+msgstr "自动保存文件间隔（分钟）"
+
+#: tformoptions.lablbrightbackcolor.caption
+msgid "Back Color"
+msgstr "背景色"
+
+#: tformoptions.lablbrightforecolor.caption
+msgid "Fore Color"
+msgstr "前景色"
+
+#: tformoptions.lablexpandsignsize.caption
+msgid "TreeView Expand Sign size"
+msgstr "目录树“展开标记”的尺寸"
+
+#: tformoptions.lablhistorymaxsize.caption
+msgid "Maximum size of one node's history(KB)"
+msgstr "单节点历史记录最大容量（KB）"
+
+#: tformoptions.lablhistorymincount.caption
+msgid "Minimum count of one node's history"
+msgstr "单节点历史记录最少数量"
+
+#: tformoptions.lablinfobarfontname.caption
+msgid "InfoBar Font"
+msgstr "信息栏字体"
+
+#: tformoptions.labllanguage.caption
+msgid "Language"
+msgstr "语言"
+
+#: tformoptions.lablnotebarfontname.caption
+msgid "NoteBar Font"
+msgstr "笔记栏字体"
+
+#: tformoptions.lablrecentcountlimit.caption
+msgid "The count limit of recent searched strings"
+msgstr "最近搜索的字符串保留数量"
+
+#: tformoptions.lablsearchcountlimit.caption
+msgid "The count limit of search results"
+msgstr "搜索结果数量限制"
+
+#: tformoptions.labltreebarfontname.caption
+msgid "TreeBar Font"
+msgstr "目录树字体"
+
+#: tformoptions.lablwindowfontname.caption
+msgid "Window Font"
+msgstr "窗口字体"
+
+#: tformoptions.lablwindowfontsize.caption
+msgid "Size"
+msgstr "大小"
+
+#: tformsearch.chkbnamefilter.caption
+msgid "Name Filter(Regular)"
+msgstr "名称过滤(正则)"
+
+#: tformsearch.chkbsearchinname.caption
+msgid "Search in name"
+msgstr "在名称中搜索"
+
+#: tformsearch.chkbsearchinnote.caption
+msgid "Search in note"
+msgstr "在内容中搜索"
+
+#: tformsearch.chkbuseregexpr.caption
+msgid "Regular expression"
+msgstr "正则表达式"
+
+#: tformutils.actndeletenode.caption
+msgid "Delete Node(&D)"
+msgstr "删除节点(&D)"
+
+#: tformutils.caption
+msgid "Utils"
+msgstr "工具"
+
+#: tformutils.chkbaddprenumsp.caption
+msgid "Add prefix number (Length)"
+msgstr "添加序号前缀（长度）"
+
+#: tformutils.chkbincludeseparatorsp.caption
+msgid "Include Separator"
+msgstr "包含分隔符"
+
+#: tformutils.chkbnamefiltersc.caption
+msgid "Name Filter"
+msgstr "名称过滤"
+
+#: tformutils.chkbspecifydepthrn.caption
+msgid "Only affect at specified depth"
+msgstr "只作用于指定深度的节点"
+
+#: tformutils.lablreplacern.caption
+msgid "Replace"
+msgstr "替换"
+
+#: tformutils.lablseparatorsp.caption
+msgid "Separator"
+msgstr "分隔符"
+
+#: tformutils.labltitlesp.caption
+msgid "Title"
+msgstr "标　题"
+
+#: tformutils.radgsearchinrn.caption
+msgid "Search In"
+msgstr "搜索对象"
+
+#: tformutils.radgsortdirection.caption
+msgid "Sort Direction"
+msgstr "排序方式"
+
+#: tformutils.radgsortof.caption
+msgid "Sort Of"
+msgstr "排序对象"
+
+#: tformutils.tabsrename.caption
+msgid "Rename"
+msgstr "重命名"
+
+#: tformutils.tabsscript.caption
+msgid "Script"
+msgstr "脚本"
+
+#: tformutils.tabssort.caption
+msgid "Sort"
+msgstr "排序"
+
+#: tformutils.tabssplit.caption
+msgid "Split"
+msgstr "拆分"
+
+#: uresources.res_autosaveinfo
+msgid "[ Save: %dm | Backup: %dm ]"
+msgstr "[ 保存: %dm | 备份: %dm ]"
+
+#: uresources.res_backupdbfail
+msgid "Failed to backup the database!"
+msgstr "备份数据失败！"
+
+#: uresources.res_captioncancel
+msgid "Cancel(&C)"
+msgstr "取消(&C)"
+
+#: uresources.res_captioneditscript
+msgid "Edit Script(&S)"
+msgstr "编辑脚本(&S)"
+
+#: uresources.res_captionendedit
+msgid "End Edit(&S)"
+msgstr "结束编辑(&S)"
+
+#: uresources.res_captionexecute
+msgid "Execute(&E)"
+msgstr "执行(&E)"
+
+#: uresources.res_captionexport
+msgid "Export(&E)"
+msgstr "导出(&E)"
+
+#: uresources.res_captionimport
+msgid "Import(&I)"
+msgstr "导入(&I)"
+
+#: uresources.res_captionok
+msgid "OK(&O)"
+msgstr "确定(&O)"
+
+#: uresources.res_captionreplace
+msgid "Replace(&R)"
+msgstr "替换(&R)"
+
+#: uresources.res_captionsearch
+msgid "Search(&S)"
+msgstr "搜索(&S)"
+
+#: uresources.res_childnodesinfo
+msgid "Child Nodes: %d"
+msgstr "子节点数：%d"
+
+#: uresources.res_closedbfail
+msgid "Failed to close the database!"
+msgstr "关闭数据库失败！"
+
+#: uresources.res_createdbfail
+msgid "Failed to create the database!"
+msgstr "创建数据库失败！"
+
+#: uresources.res_dbislocked
+msgid "Database is locked. Do you want to force open it?"
+msgstr "数据库被锁定，是否强行打开？"
+
+#: uresources.res_dbversionerror
+msgid "Database version error!"
+msgstr "数据库版本错误！"
+
+#: uresources.res_deletenodetip
+msgid "The node can't be recovered after delete. Do you want to continue?"
+msgstr "节点被删除后无法恢复，是否继续？"
+
+#: uresources.res_dialogfiltertdb
+msgid "TomiNote File|*.tdb|All File|*.*"
+msgstr "TomiNote 文件|*.tdb|所有文件|*.*"
+
+#: uresources.res_dialogfiltertxt
+msgid "Text File|*.txt|All File|*.*"
+msgstr "文本文件|*.txt|所有文件|*.*"
+
+#: uresources.res_emptyrecyclertip
+msgid "The nodes can't be recovered after empty. Do you want to continue?"
+msgstr "节点被清空后无法恢复，是否继续？"
+
+#: uresources.res_exportfromitems
+msgid ""
+"Selected Node  \n"
+"Selected Branch\n"
+"All Nodes      \n"
+msgstr ""
+"所选节点\n"
+"所选分支\n"
+"所有节点\n"
+
+#: uresources.res_exporttoitems
+msgid ""
+"To file     \n"
+"To directory\n"
+"To database \n"
+msgstr ""
+"到文件　\n"
+"到目录　\n"
+"到数据库\n"
+
+#: uresources.res_hidebarsitems
+msgid ""
+"MenuBar\n"
+"ToolBar\n"
+"StatBar\n"
+"TreeBar\n"
+"RecyBar\n"
+"InfoBar\n"
+msgstr ""
+"菜单栏\n"
+"工具栏\n"
+"状态栏\n"
+"目录树\n"
+"回收站\n"
+"信息栏\n"
+
+#: uresources.res_ignorecase
+msgid "Ignore Case"
+msgstr "忽略大小写"
+
+#: uresources.res_importfromitems
+msgid ""
+"From file     \n"
+"From directory\n"
+"From database \n"
+msgstr ""
+"导入文件　\n"
+"导入目录　\n"
+"导入数据库\n"
+
+#: uresources.res_importtoitems
+msgid ""
+"To prev node\n"
+"To first child\n"
+"To next node\n"
+"To last child\n"
+msgstr ""
+"到节点之前\n"
+"到子节点首\n"
+"到节点之后\n"
+"到子节点尾\n"
+
+#: uresources.res_keepwindowsizeitems
+msgid ""
+"Main\n"
+"Search\n"
+"Import\n"
+"Export\n"
+"Options\n"
+"Utils\n"
+msgstr ""
+"主窗口\n"
+"搜索\n"
+"导入\n"
+"导出\n"
+"选项\n"
+"工具\n"
+"\n"
+
+#: uresources.res_langlist
+msgid "af=Afrikaans|am=Amharic|ar=Arabic|ar_ae=Arabic(United Arab Emirates)|ar_bh=Arabic(Bahrain)|ar_dz=Arabic(Algeria)|ar_eg=Arabic(Egypt)|ar_iq=Arabic(Iraq)|ar_jo=Arabic(Jordan)|ar_kw=Arabic(Kuwait)|ar_lb=Arabic(Lebanon)|ar_ly=Arabic(Libya)|ar_ma=Arabic(Morocco)|ar_om=Arabic(Oman)|ar_qa=Arabic(Qatar)|ar_sa=Arabic(Saudi Arabia)|ar_sy=Arabic(Syria)|ar_tn=Arabic(Tunisia)|ar_ye=Arabic(Yemen)|as=Assamese|az=Azeri|az_az=Azeri(Cyrillic)|be=Belarusian|bg=Bulgarian|bn=Bengali|bo=Tibetan|bs=Bosnian|ca=Catalan|cs=Czech|cy=Welsh|da=Danish|de=German|de_at=German(Austria)|de_ch=German(Switzerland)|de_de=German(Germany)|de_li=German(Liechtenstein)|de_lu=German(Luxembourg)|dv=Maldivian|el=Greek|en=English|en_au=English(Australia)|en_bz=English(Belize)|en_ca=English(Canada)|en_cb=English(Caribbean)|en_gb=English(Great Britain)|en_ie=English(Ireland)|en_in=English(India)|en_jm=English(Jamaica)|en_nz=English(New Zealand)|en_ph=English(Philippines)|en_tt=English(Trinidad)|en_us=English(United States)|en_za=English(Southern Africa)|es=Spanish|es_ar=Spanish(Argentina)|es_bo=Spanish(Bolivia)|es_cl=Spanish(Chile)|es_co=Spanish(Colombia)|es_cr=Spanish(Costa Rica)|es_do=Spanish(Dominican Republic)|es_ec=Spanish(Ecuador)|es_es=Spanish(Traditional)|es_gt=Spanish(Guatemala)|es_hn=Spanish(Honduras)|es_mx=Spanish(Mexico)|es_ni=Spanish(Nicaragua)|es_pa=Spanish(Panama)|es_pe=Spanish(Peru)|es_pr=Spanish(Puerto Rico)|es_py=Spanish(Paraguay)|es_sv=Spanish(ElSalvador)|es_uy=Spanish(Uruguay)|es_ve=Spanish(Venezuela)|et=Estonian|eu=Basque|fa=Farsi|fi=Finnish|fo=Faroese|fr=French|fr_be=French(Belgium)|fr_ca=French(Canada)|fr_ch=French(Switzerland)|fr_fr=French(France)|fr_lu=French(Luxembourg)|ga=Irish|gd=Gaelic(Scotland)|gd_ie=Gaelic(Ireland)|gl=Galician|gn=Guarani(Paraguay)|gu=Gujarati|he=Hebrew|hi=Hindi|hr=Croatian|hu=Hungarian|hy=Armenian|id=Indonesian|is=Icelandic|it=Italian|it_ch=Italian(Switzerland)|it_it=Italian(Italy)|ja=Japanese|ka=Georgian|kk=Kazakh|km=Khmer|kn=Kannada|ko=Korean|ks=Kashmiri|la=Latin|lo=Lao|lt=Lithuanian|lv=Latvian|mi=Maori|mk=FYRO Macedonia|ml=Malayalam|mn=Mongolian|mr=Marathi|ms=Malay|ms_bn=Malay(Brunei)|ms_my=Malay(Malaysia)|mt=Maltese|my=Burmese|nb=Norwegian(Bokml)|ne=Nepali|nl=Dutch|nl_be=Dutch(Belgium)|nl_nl=Dutch(Netherlands)|no=Norwegian|or=Oriya|pa=Punjabi|pl=Polish|pt=Portuguese|pt_br=Portuguese(Brazil)|pt_pt=Portuguese(Portugal)|rm=Raeto(Romance)|ro=Romanian|ro_mo=Romanian(Moldova)|ru=Russian|ru_mo=Russian(Moldova)|sa=Sanskrit|sb=Sorbian|sd=Sindhi|si=Sinhalese|sk=Slovak|sl=Slovenian|so=Somali|sq=Albanian|sr=Serbian(Latin)|sr_sp=Serbian(Cyrillic)|sv=Swedish|sv_fi=Swedish(Finland)|sv_se=Swedish(Sweden)|sw=Swahili|sz=Sami(lappish)|ta=Tamil|te=Telugu|tg=Tajik|th=Thai|tk=Turkmen|tn=Setswana|tr=Turkish|ts=Tsonga|tt=Tatar|uk=Ukrainian|ur=Urdu|uz=Uzbek(Latin)|uz_uz=Uzbek(Cyrillic)|ve=Venda|vi=Vietnamese|xh=Xhosa|yi=Yiddish|zh=Chinese|zh_cn=Chinese(China)|zh_hk=Chinese(Hong Kong SAR)|zh_mo=Chinese(Macau SAR)|zh_sg=Chinese(Singapore)|zh_tw=Chinese(Taiwan)|zu=Zulu"
+msgstr "af=南非荷兰语|am=阿姆哈拉语|ar=阿拉伯语|ar_ae=阿拉伯语（阿拉伯联合酋长国）|ar_bh=阿拉伯语（巴林）|ar_dz=阿拉伯语（阿尔及利亚）|ar_eg=阿拉伯语（埃及）|ar_iq=阿拉伯语（伊拉克）|ar_jo=阿拉伯语（约旦）|ar_kw=阿拉伯语（科威特）|ar_lb=阿拉伯语（黎巴嫩）|ar_ly=阿拉伯语（利比亚）|ar_ma=阿拉伯语（摩洛哥）|ar_om=阿拉伯语（阿曼）|ar_qa=阿拉伯语（卡塔尔）|ar_sa=阿拉伯语（沙特阿拉伯）|ar_sy=阿拉伯语（叙利亚）|ar_tn=阿拉伯语（突尼斯）|ar_ye=阿拉伯语（也门）|as=阿萨姆语|az=阿塞拜疆语|az_az=阿塞拜疆语（西里尔）|be=白俄罗斯语|bg=保加利亚语|bn=孟加拉语|bo=藏语|bs=波斯尼亚语|ca=加泰罗尼亚语|cs=捷克语|cy=威尔士语|da=丹麦语|de=德语|de_at=德语（奥地利）|de_ch=德语（瑞士）|de_de=德语（德国）|de_li=德语（列支敦士登）|de_lu=德语（卢森堡）|dv=马尔代夫|el=希腊语|en=英语|en_au=英语（澳大利亚）|en_bz=英语（伯利兹）|en_ca=英语（加拿大）|en_cb=英语（加勒比海）|en_gb=英语（英国）|en_ie=英语（爱尔兰）|en_in=英语（印度）|en_jm=英语（牙买加）|en_nz=英语（新西兰）|en_ph=英语（菲律宾）|en_tt=英语（特立尼达和多巴哥）|en_us=英语（美国）|en_za=英语（南非）|es=西班牙语|es_ar=西班牙语（阿根廷）|es_bo=西班牙语（玻利维亚）|es_cl=西班牙语（智利）|es_co=西班牙语（哥伦比亚）|es_cr=西班牙语（哥斯达黎加）|es_do=西班牙语（多米尼加共和国）|es_ec=西班牙语（厄瓜多尔）|es_es=西班牙语（传统）|es_gt=西班牙语（危地马拉）|es_hn=西班牙语（洪都拉斯）|es_mx=西班牙语（墨西哥）|es_ni=西班牙语（尼加拉瓜）|es_pa=西班牙语（巴拿马）|es_pe=西班牙语（秘鲁）|es_pr=西班牙语（波多黎各）|es_py=西班牙语（巴拉圭）|es_sv=西班牙语（萨尔瓦多）|es_uy=西班牙语（乌拉圭）|es_ve=西班牙语（委内瑞拉）|et=爱沙尼亚语|eu=巴斯克语|fa=波斯语|fi=芬兰语|fo=法罗语|fr=法语|fr_be=法语（比利时）|fr_ca=法语（加拿大）|fr_ch=法语（瑞士）|fr_fr=法语（法国）|fr_lu=法语（卢森堡）|ga=爱尔兰语|gd=盖尔语（苏格兰）|gd_ie=盖尔语（爱尔兰）|gl=加利西亚语|gn=瓜拉尼语（巴拉圭）|gu=古吉拉特语|he=希伯来语|hi=印地语|hr=克罗地亚语|hu=匈牙利语|hy=亚美尼亚语|id=印度尼西亚语|is=冰岛语|it=意大利语|it_ch=意大利语（瑞士）|it_it=意大利语（意大利）|ja=日语|ka=格鲁吉亚语|kk=哈萨克语|km=高棉语|kn=卡纳达语|ko=韩语|ks=克什米尔语|la=拉丁语|lo=老挝语|lt=立陶宛语|lv=拉脱维亚语|mi=毛利语|mk=马其顿语（前南马其顿）|ml=马拉雅拉姆语|mn=蒙古语|mr=马拉地语|ms=马来西亚语|ms_bn=马来西亚语（文莱）|ms_my=马来西亚语（马来西亚）|mt=马耳他语|my=缅甸语|nb=挪威语（书面挪威语）|ne=尼泊尔语|nl=荷兰语|nl_be=荷兰语（比利时）|nl_nl=荷兰语（荷兰）|no=挪威语|or=奥里亚语|pa=旁遮普语|pl=波兰语|pt=葡萄牙语|pt_br=葡萄牙语（巴西）|pt_pt=葡萄牙语（葡萄牙）|rm=利托（罗曼斯语）|ro=罗马尼亚语|ro_mo=罗马尼亚语（摩尔多瓦）|ru=俄语|ru_mo=俄语（摩尔多瓦）|sa=梵文|sb=索布语|sd=信德语|si=僧伽罗语|sk=斯洛伐克语|sl=斯洛文尼亚语|so=索马里语|sq=阿尔巴尼亚语|sr=塞尔维亚语（拉丁）|sr_sp=塞尔维亚语（西里尔）|sv=瑞典语|sv_fi=瑞典语（芬兰）|sv_se=瑞典语（瑞典）|sw=斯瓦希里语|sz=萨米语（拉普兰）|ta=泰米尔语|te=泰卢固语|tg=塔吉克语|th=泰语|tk=土库曼语|tn=茨瓦纳语|tr=土耳其语|ts=汤加语|tt=鞑靼语|uk=乌克兰语|ur=乌尔都语|uz=乌兹别克语（拉丁）|uz_uz=乌兹别克语（西里尔）|ve=文达语|vi=越南语|xh=科萨语|yi=依地语|zh=中文|zh_cn=中文（中华人民共和国）|zh_hk=中文（香港特别行政区）|zh_mo=中文（澳门特别行政区）|zh_sg=中文（新加坡）|zh_tw=中文（台湾）|zu=祖鲁语"
+
+#: uresources.res_multiline
+msgid "Multi-Line"
+msgstr "多行模式"
+
+#: uresources.res_multireplacetip
+msgid "Multiple nodes will be changed. Do you want to continue?"
+msgstr "多个节点将被改变，是否继续？"
+
+#: uresources.res_nongreedy
+msgid "Non-Greedy"
+msgstr "非贪婪"
+
+#: uresources.res_opendbfail
+msgid "Failed to open the database!"
+msgstr "打开数据库失败！"
+
+#: uresources.res_optionstabsitems
+msgid ""
+"General\n"
+"Layout\n"
+"Theme\n"
+"Other\n"
+msgstr ""
+"常规\n"
+"界面\n"
+"主题\n"
+"其它\n"
+
+#: uresources.res_overwritefilefail
+msgid "Failed to overwrite the file!"
+msgstr "覆盖文件失败！"
+
+#: uresources.res_overwritefiletip
+msgid "The file already exists. Do you want to overwrite it?"
+msgstr "文件已经存在，是否将其覆盖？"
+
+#: uresources.res_recentfilenotexists
+msgid "The file doesn't exists. Do you want to remove the menu item?"
+msgstr "文件不存在，是否删除该菜单项？"
+
+#: uresources.res_renamewarning
+msgid "Multiple nodes will be renamed and can't be undone. Do you want to continue?"
+msgstr "多个节点将被重命名，此操作无法撤销，是否继续？"
+
+#: uresources.res_savedatatip
+msgid "The data has changed. Do you want to save it?"
+msgstr "数据已被更改，是否保存？"
+
+#: uresources.res_savedbfail
+msgid "Failed to save the database!"
+msgstr "保存数据库失败！"
+
+#: uresources.res_scarchresultpart
+msgid "Part %d [ %s | %ds ]"
+msgstr "部分 %d [ %s | %d秒 ]"
+
+#: uresources.res_scarchresulttotal
+msgid "Total %d [ %s | %ds ]"
+msgstr "全部 %d [ %s | %d秒 ]"
+
+#: uresources.res_searchfromitems
+msgid ""
+"Selected node\n"
+"Selected branch\n"
+"All nodes\n"
+msgstr ""
+"所选节点\n"
+"所选分支\n"
+"所有节点\n"
+
+#: uresources.res_searchinitems
+msgid ""
+"Node Name\n"
+"Node Note\n"
+msgstr ""
+"节点名称\n"
+"节点内容\n"
+
+#: uresources.res_searchresultindex
+msgid "Search Result: %d / %d"
+msgstr "搜索结果：%d / %d"
+
+#: uresources.res_sortdirectionitems
+msgid ""
+"Ascending\n"
+"Descending\n"
+msgstr ""
+"顺序\n"
+"逆序\n"
+
+#: uresources.res_sortofitems
+msgid ""
+"Sibling\n"
+"Children\n"
+msgstr ""
+"同级节点\n"
+"子级节点\n"
+
+#: uresources.res_textsearch
+msgid "Search"
+msgstr "搜索"
+
+#: uresources.res_titleopendlg
+msgid "Open File"
+msgstr "打开文件"
+
+#: uresources.res_titlesavedlg
+msgid "Save File"
+msgstr "保存文件"
+
+#: uresources.res_titleseldirdlg
+msgid "Select Directory"
+msgstr "选择目录"
+
+#: uresources.res_unnamednode
+msgid "Unnamed Node"
+msgstr "未命名节点"
+

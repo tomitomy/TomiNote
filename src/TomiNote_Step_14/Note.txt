@@ -1,0 +1,29 @@
+[Design Objective 设计目标]
+
+Prev Node, Next Node, Expand, Collapse
+前一节点、后一节点、展开、收起
+
+Fix the "Naming Box" background color bug, Add History Record function in "Naming Box"
+修复“重命名框”背景色的 Bug，给“重命名框”添加历史记录功能
+
+List Recent Files
+列出最近打开的文件
+
+Load the last file at startup
+启动时载入最后的文件
+
+Select the last node when loading the file
+载入文件时选择最后的节点
+
+Implement the "Database File Is Locked" Message(Can not open the same database file at the same time, otherwise there will be deadlock)
+实现“数据库文件锁定”提示（不能同时打开同一个数据库文件，否则会出现死锁）
+
+Auto-Save and Auto-Backup
+自动保存、自动备份
+
+History size limit
+历史记录大小限制
+
+Auto select the changed content when Undo/Redo by click the Undo/Redo button
+单击撤销、恢复按钮时自动选择变化的文本
+

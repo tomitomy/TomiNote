@@ -1,0 +1,210 @@
+object formExport: TformExport
+  Left = 360
+  Height = 220
+  Top = 123
+  Width = 520
+  Caption = 'Export'
+  ClientHeight = 220
+  ClientWidth = 520
+  FormStyle = fsStayOnTop
+  OnActivate = FormActivate
+  OnClose = FormClose
+  OnCreate = FormCreate
+  Position = poDesktopCenter
+  LCLVersion = '1.8.0.4'
+  object radgExportTo: TRadioGroup
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = radgExportFrom
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    Left = 8
+    Height = 40
+    Top = 54
+    Width = 504
+    Anchors = [akTop, akLeft, akRight]
+    AutoFill = True
+    AutoSize = True
+    BorderSpacing.Left = 8
+    BorderSpacing.Top = 6
+    BorderSpacing.Right = 8
+    ChildSizing.LeftRightSpacing = 6
+    ChildSizing.TopBottomSpacing = 6
+    ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+    ChildSizing.EnlargeVertical = crsHomogenousChildResize
+    ChildSizing.ShrinkHorizontal = crsHomogenousChildResize
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 3
+    ClientHeight = 36
+    ClientWidth = 500
+    Columns = 3
+    Items.Strings = (
+      'To file     '
+      'To directory'
+      'To database '
+    )
+    OnSelectionChanged = radgExportToSelectionChanged
+    TabOrder = 0
+  end
+  object radgExportFrom: TRadioGroup
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = Owner
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    Left = 8
+    Height = 40
+    Top = 8
+    Width = 504
+    Anchors = [akTop, akLeft, akRight]
+    AutoFill = True
+    AutoSize = True
+    BorderSpacing.Left = 8
+    BorderSpacing.Top = 8
+    BorderSpacing.Right = 8
+    ChildSizing.LeftRightSpacing = 6
+    ChildSizing.TopBottomSpacing = 6
+    ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+    ChildSizing.EnlargeVertical = crsHomogenousChildResize
+    ChildSizing.ShrinkHorizontal = crsHomogenousChildResize
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 3
+    ClientHeight = 36
+    ClientWidth = 500
+    Columns = 3
+    Items.Strings = (
+      'Selected Node  '
+      'Selected Branch'
+      'All Nodes      '
+    )
+    OnSelectionChanged = radgExportToSelectionChanged
+    TabOrder = 1
+  end
+  object chkbAddSeparator: TCheckBox
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = editSeparator
+    AnchorSideTop.Side = asrCenter
+    AnchorSideRight.Control = chkbAddFileExt
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Side = asrBottom
+    Left = 8
+    Height = 24
+    Top = 143
+    Width = 188
+    Anchors = [akTop, akLeft, akRight]
+    BorderSpacing.Left = 8
+    BorderSpacing.Top = 6
+    Caption = 'Add Separator'
+    OnChange = chkbAddSeparatorChange
+    TabOrder = 4
+  end
+  object chkbAddFileExt: TCheckBox
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = editFileExt
+    AnchorSideTop.Side = asrCenter
+    Left = 8
+    Height = 24
+    Top = 104
+    Width = 188
+    BorderSpacing.Left = 8
+    Caption = 'Add file extension'
+    OnChange = chkbAddFileExtChange
+    TabOrder = 2
+  end
+  object editFileExt: TEdit
+    AnchorSideLeft.Control = chkbAddFileExt
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = radgExportTo
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    Left = 202
+    Height = 33
+    Top = 100
+    Width = 310
+    Anchors = [akTop, akLeft, akRight]
+    AutoSelect = False
+    BorderSpacing.Left = 6
+    BorderSpacing.Top = 6
+    BorderSpacing.Right = 8
+    TabOrder = 3
+  end
+  object editSeparator: TEdit
+    AnchorSideLeft.Control = chkbAddSeparator
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = editFileExt
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Side = asrBottom
+    Left = 202
+    Height = 33
+    Top = 139
+    Width = 310
+    Anchors = [akTop, akLeft, akRight]
+    AutoSelect = False
+    BorderSpacing.Left = 6
+    BorderSpacing.Top = 6
+    BorderSpacing.Right = 8
+    TabOrder = 5
+  end
+  object bttnOK: TButton
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = lablSpace
+    AnchorSideBottom.Control = bttnCancel
+    AnchorSideBottom.Side = asrCenter
+    Left = 272
+    Height = 32
+    Top = 180
+    Width = 100
+    Anchors = [akRight, akBottom]
+    AutoSize = True
+    BorderSpacing.Bottom = 8
+    Constraints.MinHeight = 32
+    Constraints.MinWidth = 100
+    OnClick = bttnOKClick
+    TabOrder = 6
+  end
+  object bttnCancel: TButton
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
+    Left = 404
+    Height = 32
+    Top = 180
+    Width = 100
+    Anchors = [akRight, akBottom]
+    AutoSize = True
+    BorderSpacing.Right = 16
+    BorderSpacing.Bottom = 8
+    Constraints.MinHeight = 32
+    Constraints.MinWidth = 100
+    OnClick = bttnCancelClick
+    TabOrder = 7
+  end
+  object lablSpace: TLabel
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = bttnOK
+    AnchorSideRight.Control = bttnCancel
+    AnchorSideBottom.Control = bttnCancel
+    AnchorSideBottom.Side = asrCenter
+    Left = 372
+    Height = 32
+    Top = 180
+    Width = 32
+    Anchors = [akRight, akBottom]
+    AutoSize = False
+    Constraints.MinWidth = 16
+    ParentColor = False
+  end
+  object saveDlg1: TSaveDialog
+    left = 144
+    top = 168
+  end
+  object seldDlg1: TSelectDirectoryDialog
+    left = 48
+    top = 168
+  end
+end

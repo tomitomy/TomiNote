@@ -1,0 +1,4 @@
+[Design Objective 设计目标]
+
+Single node's history record | 单节点历史记录
+

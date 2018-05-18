@@ -1,0 +1,10 @@
+
+The icons used in this program are download from FatCow:
+http://www.fatcow.com/free-icons
+
+The License of the Icons is "CC BY 3.0":
+https://creativecommons.org/licenses/by/3.0/
+
+I modified some of the icons to suit the needs of my program.
+
+Thanks to FatCow for designing so many good icons and sharing them to everyone!

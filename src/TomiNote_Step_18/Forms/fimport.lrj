@@ -1,0 +1,5 @@
+{"version":1,"strings":[
+{"hash":84178580,"name":"tformimport.caption","sourcebytes":[73,109,112,111,114,116],"value":"Import"},
+{"hash":121471694,"name":"tformimport.chkbincludefileext.caption","sourcebytes":[73,110,99,108,117,100,101,32,102,105,108,101,32,101,120,116,101,110,115,105,111,110],"value":"Include file extension"},
+{"hash":148307961,"name":"tformimport.chkbincludeentrydir.caption","sourcebytes":[73,110,99,108,117,100,101,32,101,110,116,114,121,32,100,105,114,101,99,116,111,114,121],"value":"Include entry directory"}
+]}

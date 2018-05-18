@@ -1,0 +1,732 @@
+object formUtils: TformUtils
+  Left = 360
+  Height = 360
+  Top = 123
+  Width = 420
+  Caption = 'Utils'
+  ClientHeight = 360
+  ClientWidth = 420
+  FormStyle = fsStayOnTop
+  OnActivate = FormActivate
+  OnClose = FormClose
+  OnCreate = FormCreate
+  Position = poDesktopCenter
+  LCLVersion = '1.8.0.4'
+  object pgctMain: TPageControl
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = Owner
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = bttnCancel
+    Left = 8
+    Height = 310
+    Top = 0
+    Width = 404
+    ActivePage = tabsSort
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    BorderSpacing.Left = 8
+    BorderSpacing.Right = 8
+    BorderSpacing.Bottom = 8
+    TabIndex = 0
+    TabOrder = 0
+    object tabsSort: TTabSheet
+      Caption = 'Sort'
+      ClientHeight = 278
+      ClientWidth = 400
+      object radgSortDirection: TRadioGroup
+        AnchorSideLeft.Control = tabsSort
+        AnchorSideTop.Control = radgSortOf
+        AnchorSideTop.Side = asrBottom
+        AnchorSideRight.Control = tabsSort
+        AnchorSideRight.Side = asrBottom
+        Left = 6
+        Height = 44
+        Top = 70
+        Width = 387
+        Anchors = [akTop, akLeft, akRight]
+        AutoFill = True
+        AutoSize = True
+        BorderSpacing.Left = 6
+        BorderSpacing.Top = 18
+        BorderSpacing.Right = 7
+        Caption = 'Sort Direction'
+        ChildSizing.LeftRightSpacing = 6
+        ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+        ChildSizing.EnlargeVertical = crsHomogenousChildResize
+        ChildSizing.ShrinkHorizontal = crsScaleChilds
+        ChildSizing.ShrinkVertical = crsScaleChilds
+        ChildSizing.Layout = cclLeftToRightThenTopToBottom
+        ChildSizing.ControlsPerLine = 2
+        ClientHeight = 24
+        ClientWidth = 383
+        Columns = 2
+        Items.Strings = (
+          'Ascending'
+          'Descending'
+        )
+        TabOrder = 1
+      end
+      object radgSortOf: TRadioGroup
+        AnchorSideLeft.Control = tabsSort
+        AnchorSideTop.Control = tabsSort
+        AnchorSideRight.Control = tabsSort
+        AnchorSideRight.Side = asrBottom
+        Left = 6
+        Height = 44
+        Top = 8
+        Width = 388
+        Anchors = [akTop, akLeft, akRight]
+        AutoFill = True
+        AutoSize = True
+        BorderSpacing.Left = 6
+        BorderSpacing.Top = 8
+        BorderSpacing.Right = 6
+        Caption = 'Sort Of'
+        ChildSizing.LeftRightSpacing = 6
+        ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+        ChildSizing.EnlargeVertical = crsHomogenousChildResize
+        ChildSizing.ShrinkHorizontal = crsScaleChilds
+        ChildSizing.ShrinkVertical = crsScaleChilds
+        ChildSizing.Layout = cclLeftToRightThenTopToBottom
+        ChildSizing.ControlsPerLine = 2
+        ClientHeight = 24
+        ClientWidth = 384
+        Columns = 2
+        Items.Strings = (
+          'Sibling'
+          'Children'
+        )
+        TabOrder = 0
+      end
+    end
+    object tabsSplit: TTabSheet
+      Caption = 'Split'
+      ClientHeight = 278
+      ClientWidth = 400
+      object lablSeparatorSp: TLabel
+        AnchorSideLeft.Control = tabsSplit
+        AnchorSideTop.Control = combSeparatorSp
+        AnchorSideTop.Side = asrCenter
+        Left = 6
+        Height = 23
+        Top = 12
+        Width = 81
+        BorderSpacing.Left = 6
+        Caption = 'Separator'
+        ParentColor = False
+      end
+      object chkbAddPreNumSp: TCheckBox
+        AnchorSideLeft.Control = tabsSplit
+        AnchorSideTop.Control = editPreNumLenSp
+        AnchorSideTop.Side = asrCenter
+        AnchorSideRight.Control = editPreNumLenSp
+        Left = 6
+        Height = 24
+        Top = 168
+        Width = 302
+        Anchors = [akTop, akLeft, akRight]
+        BorderSpacing.Left = 6
+        BorderSpacing.Right = 6
+        Caption = 'Add prefix number (Length)'
+        OnChange = chkbAddPreNumSpChange
+        TabOrder = 6
+      end
+      object editPreNumLenSp: TEdit
+        AnchorSideTop.Control = chkbIncludeSeparatorSp
+        AnchorSideTop.Side = asrBottom
+        AnchorSideRight.Control = tabsSplit
+        AnchorSideRight.Side = asrBottom
+        Left = 314
+        Height = 33
+        Top = 164
+        Width = 80
+        Anchors = [akTop, akRight]
+        BorderSpacing.Top = 8
+        BorderSpacing.Right = 6
+        TabOrder = 7
+      end
+      object lablTitleSp: TLabel
+        AnchorSideLeft.Control = tabsSplit
+        AnchorSideTop.Control = combTitleSp
+        AnchorSideTop.Side = asrCenter
+        AnchorSideRight.Control = combTitleSp
+        Left = 6
+        Height = 23
+        Top = 49
+        Width = 87
+        Anchors = [akTop, akLeft, akRight]
+        BorderSpacing.Left = 6
+        Caption = 'Title'
+        ParentColor = False
+      end
+      object combTitleSp: TComboBox
+        AnchorSideLeft.Control = combSeparatorSp
+        AnchorSideTop.Control = combSeparatorSp
+        AnchorSideTop.Side = asrBottom
+        AnchorSideRight.Control = tabsSplit
+        AnchorSideRight.Side = asrBottom
+        Left = 93
+        Height = 35
+        Top = 43
+        Width = 301
+        Anchors = [akTop, akLeft, akRight]
+        AutoSelect = False
+        BorderSpacing.Top = 2
+        BorderSpacing.Right = 6
+        ItemHeight = 0
+        OnCloseUp = combTitleSpCloseUp
+        TabOrder = 1
+      end
+      object combSeparatorSp: TComboBox
+        AnchorSideLeft.Control = lablSeparatorSp
+        AnchorSideLeft.Side = asrBottom
+        AnchorSideTop.Control = tabsSplit
+        AnchorSideRight.Control = tabsSplit
+        AnchorSideRight.Side = asrBottom
+        Left = 93
+        Height = 35
+        Top = 6
+        Width = 301
+        Anchors = [akTop, akLeft, akRight]
+        AutoSelect = False
+        BorderSpacing.Left = 6
+        BorderSpacing.Top = 6
+        BorderSpacing.Right = 6
+        ItemHeight = 0
+        OnCloseUp = combSeparatorSpCloseUp
+        TabOrder = 0
+      end
+      object chkbIncludeSeparatorSp: TCheckBox
+        AnchorSideLeft.Control = tabsSplit
+        AnchorSideTop.Control = chkbNonGreedySp
+        AnchorSideTop.Side = asrBottom
+        AnchorSideRight.Control = tabsSplit
+        AnchorSideRight.Side = asrBottom
+        Left = 6
+        Height = 24
+        Top = 132
+        Width = 388
+        Anchors = [akTop, akLeft, akRight]
+        BorderSpacing.Left = 6
+        BorderSpacing.Top = 24
+        BorderSpacing.Right = 6
+        Caption = 'Include Separator'
+        TabOrder = 5
+      end
+      object chkbIgnoreCaseSp: TCheckBox
+        AnchorSideLeft.Control = tabsSplit
+        AnchorSideTop.Control = combTitleSp
+        AnchorSideTop.Side = asrBottom
+        Left = 6
+        Height = 24
+        Top = 84
+        Width = 125
+        BorderSpacing.Left = 6
+        BorderSpacing.Top = 6
+        Caption = 'Ignore Case'
+        TabOrder = 2
+      end
+      object chkbMultiLineSp: TCheckBox
+        AnchorSideLeft.Control = chkbIgnoreCaseSp
+        AnchorSideLeft.Side = asrBottom
+        AnchorSideTop.Control = chkbIgnoreCaseSp
+        AnchorSideTop.Side = asrCenter
+        Left = 137
+        Height = 24
+        Top = 84
+        Width = 116
+        BorderSpacing.Left = 6
+        Caption = 'Multi-Line'
+        TabOrder = 3
+      end
+      object chkbNonGreedySp: TCheckBox
+        AnchorSideLeft.Control = chkbMultiLineSp
+        AnchorSideLeft.Side = asrBottom
+        AnchorSideTop.Control = chkbIgnoreCaseSp
+        AnchorSideTop.Side = asrCenter
+        AnchorSideRight.Control = tabsSplit
+        AnchorSideRight.Side = asrBottom
+        Left = 259
+        Height = 24
+        Top = 84
+        Width = 135
+        Anchors = [akTop, akLeft, akRight]
+        BorderSpacing.Left = 6
+        BorderSpacing.Right = 6
+        Caption = 'Non-Greedy'
+        TabOrder = 4
+      end
+    end
+    object tabsRename: TTabSheet
+      Caption = 'Rename'
+      ClientHeight = 278
+      ClientWidth = 400
+      object lablSearchRn: TLabel
+        AnchorSideLeft.Control = tabsRename
+        AnchorSideTop.Control = combSearchRn
+        AnchorSideTop.Side = asrCenter
+        Left = 6
+        Height = 23
+        Top = 12
+        Width = 54
+        BorderSpacing.Left = 6
+        Caption = 'Search'
+        ParentColor = False
+      end
+      object combSearchRn: TComboBox
+        AnchorSideLeft.Control = lablReplaceRn
+        AnchorSideLeft.Side = asrBottom
+        AnchorSideTop.Control = tabsRename
+        AnchorSideRight.Control = tabsRename
+        AnchorSideRight.Side = asrBottom
+        Left = 75
+        Height = 35
+        Top = 6
+        Width = 319
+        Anchors = [akTop, akLeft, akRight]
+        AutoSelect = False
+        BorderSpacing.Left = 6
+        BorderSpacing.Top = 6
+        BorderSpacing.Right = 6
+        ItemHeight = 0
+        OnCloseUp = combSearchRnCloseUp
+        TabOrder = 0
+      end
+      object lablReplaceRn: TLabel
+        AnchorSideLeft.Control = tabsRename
+        AnchorSideTop.Control = combReplaceRn
+        AnchorSideTop.Side = asrCenter
+        Left = 6
+        Height = 23
+        Top = 49
+        Width = 63
+        BorderSpacing.Left = 6
+        Caption = 'Replace'
+        ParentColor = False
+      end
+      object combReplaceRn: TComboBox
+        AnchorSideLeft.Control = combSearchRn
+        AnchorSideTop.Control = combSearchRn
+        AnchorSideTop.Side = asrBottom
+        AnchorSideRight.Control = tabsRename
+        AnchorSideRight.Side = asrBottom
+        Left = 75
+        Height = 35
+        Top = 43
+        Width = 319
+        Anchors = [akTop, akLeft, akRight]
+        AutoSelect = False
+        BorderSpacing.Top = 2
+        BorderSpacing.Right = 6
+        ItemHeight = 0
+        OnCloseUp = combReplaceRnCloseUp
+        TabOrder = 1
+      end
+      object chkbIgnoreCaseRn: TCheckBox
+        AnchorSideLeft.Control = tabsRename
+        AnchorSideTop.Control = combReplaceRn
+        AnchorSideTop.Side = asrBottom
+        Left = 6
+        Height = 24
+        Top = 84
+        Width = 125
+        BorderSpacing.Left = 6
+        BorderSpacing.Top = 6
+        Caption = 'Ignore Case'
+        TabOrder = 2
+      end
+      object chkbMultiLineRn: TCheckBox
+        AnchorSideLeft.Control = chkbIgnoreCaseRn
+        AnchorSideLeft.Side = asrBottom
+        AnchorSideTop.Control = chkbIgnoreCaseRn
+        AnchorSideTop.Side = asrCenter
+        Left = 137
+        Height = 24
+        Top = 84
+        Width = 116
+        BorderSpacing.Left = 6
+        Caption = 'Multi-Line'
+        TabOrder = 3
+      end
+      object chkbNonGreedyRn: TCheckBox
+        AnchorSideLeft.Control = chkbMultiLineRn
+        AnchorSideLeft.Side = asrBottom
+        AnchorSideTop.Control = chkbIgnoreCaseRn
+        AnchorSideTop.Side = asrCenter
+        AnchorSideRight.Control = tabsRename
+        AnchorSideRight.Side = asrBottom
+        Left = 259
+        Height = 24
+        Top = 84
+        Width = 135
+        Anchors = [akTop, akLeft, akRight]
+        BorderSpacing.Left = 6
+        BorderSpacing.Right = 6
+        Caption = 'Non-Greedy'
+        TabOrder = 4
+      end
+      object chkbSpecifyDepthRn: TCheckBox
+        AnchorSideLeft.Control = tabsRename
+        AnchorSideTop.Control = editDepthRn
+        AnchorSideTop.Side = asrCenter
+        AnchorSideRight.Control = editDepthRn
+        Left = 6
+        Height = 24
+        Top = 223
+        Width = 302
+        Anchors = [akTop, akLeft, akRight]
+        BorderSpacing.Left = 6
+        BorderSpacing.Right = 6
+        Caption = 'Only affect at specified depth'
+        OnChange = chkbSpecifyDepthRnChange
+        TabOrder = 8
+      end
+      object editDepthRn: TEdit
+        AnchorSideTop.Control = editPreNumLenRn
+        AnchorSideTop.Side = asrBottom
+        AnchorSideRight.Control = tabsRename
+        AnchorSideRight.Side = asrBottom
+        Left = 314
+        Height = 33
+        Top = 219
+        Width = 80
+        Anchors = [akTop, akRight]
+        BorderSpacing.Top = 6
+        BorderSpacing.Right = 6
+        TabOrder = 9
+      end
+      object radgSearchInRn: TRadioGroup
+        AnchorSideLeft.Control = tabsRename
+        AnchorSideTop.Control = chkbIgnoreCaseRn
+        AnchorSideTop.Side = asrBottom
+        AnchorSideRight.Control = tabsRename
+        AnchorSideRight.Side = asrBottom
+        Left = 6
+        Height = 44
+        Top = 124
+        Width = 388
+        Anchors = [akTop, akLeft, akRight]
+        AutoFill = True
+        AutoSize = True
+        BorderSpacing.Left = 6
+        BorderSpacing.Top = 16
+        BorderSpacing.Right = 6
+        Caption = 'Search In'
+        ChildSizing.LeftRightSpacing = 6
+        ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+        ChildSizing.EnlargeVertical = crsHomogenousChildResize
+        ChildSizing.ShrinkHorizontal = crsScaleChilds
+        ChildSizing.ShrinkVertical = crsScaleChilds
+        ChildSizing.Layout = cclLeftToRightThenTopToBottom
+        ChildSizing.ControlsPerLine = 2
+        ClientHeight = 24
+        ClientWidth = 384
+        Columns = 2
+        Items.Strings = (
+          'Node Name'
+          'Node Note'
+        )
+        TabOrder = 5
+      end
+      object editPreNumLenRn: TEdit
+        AnchorSideTop.Control = radgSearchInRn
+        AnchorSideTop.Side = asrBottom
+        AnchorSideRight.Control = tabsRename
+        AnchorSideRight.Side = asrBottom
+        Left = 314
+        Height = 33
+        Top = 180
+        Width = 80
+        Anchors = [akTop, akRight]
+        BorderSpacing.Top = 12
+        BorderSpacing.Right = 6
+        TabOrder = 7
+      end
+      object chkbAddPreNumRn: TCheckBox
+        AnchorSideLeft.Control = tabsRename
+        AnchorSideTop.Control = editPreNumLenRn
+        AnchorSideTop.Side = asrCenter
+        AnchorSideRight.Control = editPreNumLenRn
+        Left = 6
+        Height = 24
+        Top = 184
+        Width = 302
+        Anchors = [akTop, akLeft, akRight]
+        BorderSpacing.Left = 6
+        BorderSpacing.Right = 6
+        Caption = 'Add prefix number (Length)'
+        OnChange = chkbAddPreNumRnChange
+        TabOrder = 6
+      end
+    end
+    object tabsScript: TTabSheet
+      Caption = 'Script'
+      ClientHeight = 278
+      ClientWidth = 400
+      object trevScript: TTreeView
+        AnchorSideLeft.Control = tabsScript
+        AnchorSideTop.Control = tabsScript
+        AnchorSideRight.Control = tabsScript
+        AnchorSideRight.Side = asrBottom
+        AnchorSideBottom.Control = editNameFilterSc
+        Left = 6
+        Height = 227
+        Top = 6
+        Width = 388
+        Anchors = [akTop, akLeft, akRight, akBottom]
+        BorderSpacing.Left = 6
+        BorderSpacing.Top = 6
+        BorderSpacing.Right = 6
+        BorderSpacing.Bottom = 6
+        ExpandSignType = tvestPlusMinus
+        HideSelection = False
+        PopupMenu = menuTree
+        ReadOnly = True
+        RightClickSelect = True
+        ScrollBars = ssAutoBoth
+        TabOrder = 0
+        OnDragDrop = treeDragDrop
+        OnDragOver = treeDragOver
+        OnEdited = treeEdited
+        OnMouseDown = treeMouseDown
+        OnMouseWheel = ScriptMouseWheel
+        Options = [tvoAutoItemHeight, tvoKeepCollapsedNodes, tvoReadOnly, tvoRightClickSelect, tvoShowButtons, tvoShowLines, tvoShowRoot, tvoToolTips, tvoThemedDraw]
+      end
+      object chkbNameFilterSc: TCheckBox
+        AnchorSideLeft.Control = bttnEditScript
+        AnchorSideLeft.Side = asrBottom
+        AnchorSideTop.Control = editNameFilterSc
+        AnchorSideTop.Side = asrCenter
+        Left = 132
+        Height = 24
+        Top = 243
+        Width = 125
+        BorderSpacing.Left = 6
+        Caption = 'Name Filter'
+        OnChange = chkbNameFilterScChange
+        TabOrder = 1
+      end
+      object editNameFilterSc: TEdit
+        AnchorSideLeft.Control = chkbNameFilterSc
+        AnchorSideLeft.Side = asrBottom
+        AnchorSideTop.Side = asrBottom
+        AnchorSideRight.Control = tabsScript
+        AnchorSideRight.Side = asrBottom
+        AnchorSideBottom.Control = tabsScript
+        AnchorSideBottom.Side = asrBottom
+        Left = 263
+        Height = 33
+        Top = 239
+        Width = 131
+        Anchors = [akLeft, akRight, akBottom]
+        BorderSpacing.Left = 6
+        BorderSpacing.Top = 6
+        BorderSpacing.Right = 6
+        BorderSpacing.Bottom = 6
+        TabOrder = 2
+      end
+      object bttnEditScript: TButton
+        AnchorSideLeft.Control = tabsScript
+        AnchorSideTop.Control = editNameFilterSc
+        AnchorSideBottom.Control = editNameFilterSc
+        AnchorSideBottom.Side = asrBottom
+        Left = 6
+        Height = 33
+        Top = 239
+        Width = 120
+        Action = actnEditScript
+        Anchors = [akTop, akLeft, akBottom]
+        BorderSpacing.Left = 6
+        TabOrder = 3
+      end
+      object memoScript: TMemo
+        AnchorSideLeft.Control = tabsScript
+        AnchorSideTop.Control = tabsScript
+        AnchorSideRight.Control = tabsScript
+        AnchorSideRight.Side = asrBottom
+        AnchorSideBottom.Control = editNameFilterSc
+        Left = 6
+        Height = 227
+        Top = 6
+        Width = 388
+        Anchors = [akTop, akLeft, akRight, akBottom]
+        BorderSpacing.Left = 6
+        BorderSpacing.Top = 6
+        BorderSpacing.Right = 6
+        OnMouseWheel = ScriptMouseWheel
+        PopupMenu = menuScript
+        ScrollBars = ssAutoVertical
+        TabOrder = 4
+      end
+    end
+  end
+  object bttnOK: TButton
+    AnchorSideTop.Control = bttnCancel
+    AnchorSideTop.Side = asrCenter
+    AnchorSideRight.Control = bttnCancel
+    Left = 172
+    Height = 32
+    Top = 318
+    Width = 100
+    Anchors = [akTop, akRight]
+    AutoSize = True
+    BorderSpacing.Right = 32
+    Constraints.MinHeight = 32
+    Constraints.MinWidth = 100
+    OnClick = bttnOKClick
+    TabOrder = 1
+  end
+  object bttnCancel: TButton
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
+    Left = 304
+    Height = 32
+    Top = 318
+    Width = 100
+    Anchors = [akRight, akBottom]
+    AutoSize = True
+    BorderSpacing.Right = 16
+    BorderSpacing.Bottom = 10
+    Constraints.MinHeight = 32
+    Constraints.MinWidth = 100
+    OnClick = bttnCancelClick
+    TabOrder = 2
+  end
+  object menuScript: TPopupMenu
+    left = 80
+    top = 312
+    object pmiCut: TMenuItem
+      Action = actnCut
+    end
+    object pmiCopy: TMenuItem
+      Action = actnCopy
+    end
+    object pmiPaste: TMenuItem
+      Action = actnPaste
+    end
+    object pmiSelectAll: TMenuItem
+      Action = actnSelectAll
+    end
+    object pmiDeleteText: TMenuItem
+      Action = actnDeleteText
+    end
+    object pmiSeparatorB01: TMenuItem
+      Caption = '-'
+    end
+    object pmiUndo: TMenuItem
+      Action = actnUndo
+    end
+    object pmiRedo: TMenuItem
+      Action = actnRedo
+    end
+  end
+  object actlMain: TActionList
+    left = 136
+    top = 312
+    object actnCut: TAction
+      Caption = 'Cut(&X)'
+      OnExecute = actnTextExecute
+      OnUpdate = actnTextUpdate
+      ShortCut = 16472
+    end
+    object actnCopy: TAction
+      Caption = 'Copy(&C)'
+      OnExecute = actnTextExecute
+      ShortCut = 16451
+    end
+    object actnPaste: TAction
+      Caption = 'Paste(&V)'
+      OnExecute = actnTextExecute
+      ShortCut = 16451
+    end
+    object actnSelectAll: TAction
+      Caption = 'Select All(&A)'
+      OnExecute = actnTextExecute
+      ShortCut = 16449
+    end
+    object actnDeleteText: TAction
+      Caption = 'Delete(&D)'
+      OnExecute = actnTextExecute
+    end
+    object actnUndo: TAction
+      Caption = 'Undo(&U)'
+      OnExecute = actnTextExecute
+      ShortCut = 16474
+    end
+    object actnRedo: TAction
+      Caption = 'Redo(&R)'
+      OnExecute = actnTextExecute
+      SecondaryShortCuts.Strings = (
+        'Ctrl+Y'
+      )
+      ShortCut = 24666
+    end
+    object actnRename: TAction
+      Caption = 'Rename(&R)'
+      OnExecute = actnRenameExecute
+      OnUpdate = actnRenameUpdate
+      ShortCut = 113
+    end
+    object actnAddToFront: TAction
+      Caption = 'Add To Front(&A)'
+      OnExecute = actnAddNodeExecute
+      ShortCut = 24621
+    end
+    object actnAddToBehind: TAction
+      Caption = 'Add To Behind(&S)'
+      OnExecute = actnAddNodeExecute
+      ShortCut = 16429
+    end
+    object actnAddToChildFirst: TAction
+      Caption = 'Add To Child First(&Z)'
+      OnExecute = actnAddNodeExecute
+      ShortCut = 41005
+    end
+    object actnAddToChildLast: TAction
+      Caption = 'Add To Child Last(&X)'
+      OnExecute = actnAddNodeExecute
+      ShortCut = 32813
+    end
+    object actnDeleteNode: TAction
+      Caption = 'Delete Node(&D)'
+      OnExecute = actnDeleteNodeExecute
+      ShortCut = 16430
+    end
+    object actnEditScript: TAction
+      Caption = '-Edit Script'
+      OnExecute = actnEditScriptExecute
+      OnUpdate = actnEditScriptUpdate
+      ShortCut = 16453
+    end
+  end
+  object menuTree: TPopupMenu
+    left = 24
+    top = 312
+    object pmiRename: TMenuItem
+      Action = actnRename
+    end
+    object pmiSeparatorA01: TMenuItem
+      Caption = '-'
+    end
+    object pmiAddToFront: TMenuItem
+      Action = actnAddToFront
+    end
+    object pmiAddToBehind: TMenuItem
+      Action = actnAddToBehind
+    end
+    object pmiAddToChildFirst: TMenuItem
+      Action = actnAddToChildFirst
+    end
+    object pmiAddToChildLast: TMenuItem
+      Action = actnAddToChildLast
+    end
+    object pmiSeparatorA02: TMenuItem
+      Caption = '-'
+    end
+    object pmiDeleteNode: TMenuItem
+      Action = actnDeleteNode
+    end
+  end
+end

@@ -1,0 +1,4 @@
+[Design Objective 设计目标]
+
+Combine previous functions together | 将之前的功能组合在一起
+

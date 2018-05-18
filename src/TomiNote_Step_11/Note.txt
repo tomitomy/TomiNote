@@ -1,0 +1,7 @@
+[Design Objective 设计目标]
+
+Implement common search and replace, require search content and replace content support \r \n \t \\ \xFF
+实现普通的搜索和替换，要求搜索内容和替换内容中支持 \r \n \t \\ \xFF
+
+Implement regular expression search and replace, require search content and replace content support \r \n \t \ \xFF
+实现正则表达式搜索和替换，要求搜索内容和替换内容中支持 \r \n \t \\ \xFF

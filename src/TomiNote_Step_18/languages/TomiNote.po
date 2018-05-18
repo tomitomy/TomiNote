@@ -1,0 +1,705 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8"
+
+#: tformexport.caption
+msgid "Export"
+msgstr ""
+
+#: tformexport.chkbaddfileext.caption
+msgid "Add file extension"
+msgstr ""
+
+#: tformexport.chkbaddseparator.caption
+msgid "Add Separator"
+msgstr ""
+
+#: tformimport.caption
+msgid "Import"
+msgstr ""
+
+#: tformimport.chkbincludeentrydir.caption
+msgid "Include entry directory"
+msgstr ""
+
+#: tformimport.chkbincludefileext.caption
+msgid "Include file extension"
+msgstr ""
+
+#: tformmain.actnabout.caption
+msgid "About(&A)"
+msgstr ""
+
+#: tformmain.actnaddtobehind.caption
+msgid "Add To Behind(&S)"
+msgstr ""
+
+#: tformmain.actnaddtochildfirst.caption
+msgid "Add To Child First(&Z)"
+msgstr ""
+
+#: tformmain.actnaddtochildlast.caption
+msgid "Add To Child Last(&X)"
+msgstr ""
+
+#: tformmain.actnaddtofront.caption
+msgid "Add To Front(&A)"
+msgstr ""
+
+#: tformmain.actnclose.caption
+msgid "Close(&C)"
+msgstr ""
+
+#: tformmain.actncollapse.caption
+msgid "Collapse(&N)"
+msgstr ""
+
+#: tformmain.actncopy.caption
+msgid "Copy(&C)"
+msgstr ""
+
+#: tformmain.actncut.caption
+msgid "Cut(&X)"
+msgstr ""
+
+#: tformmain.actndeletenode.caption
+msgid "Delete Node(&E)"
+msgstr ""
+
+#: tformmain.actndeletetext.caption
+msgid "Delete(&D)"
+msgstr ""
+
+#: tformmain.actnemptyrecycler.caption
+msgid "Empty Recycler(&T)"
+msgstr ""
+
+#: tformmain.actnexit.caption
+msgid "Exit(&X)"
+msgstr ""
+
+#: tformmain.actnexpand.caption
+msgid "Expand(&M)"
+msgstr ""
+
+#: tformmain.actnexport.caption
+msgid "Export(&O) ..."
+msgstr ""
+
+#: tformmain.actnfullscreen.caption
+msgid "Full Screen(&F)"
+msgstr ""
+
+#: tformmain.actnfullwindow.caption
+msgid "Full Window(&W)"
+msgstr ""
+
+#: tformmain.actnhelp.caption
+msgid "Help Content(&H)"
+msgstr ""
+
+#: tformmain.actnimport.caption
+msgid "Import(&I) ..."
+msgstr ""
+
+#: tformmain.actnmovedown.caption
+msgid "Move Down(&K)"
+msgstr ""
+
+#: tformmain.actnmoveleft.caption
+msgid "Move Left(&J)"
+msgstr ""
+
+#: tformmain.actnmoveright.caption
+msgid "Move Right(&L)"
+msgstr ""
+
+#: tformmain.actnmoveup.caption
+msgid "Move Up(&I)"
+msgstr ""
+
+#: tformmain.actnnew.caption
+msgid "New(&N) ..."
+msgstr ""
+
+#: tformmain.actnnextnode.caption
+msgid "Next Node(&N)"
+msgstr ""
+
+#: tformmain.actnnextsearchresult.caption
+msgid "Next Search Result(&N)"
+msgstr ""
+
+#: tformmain.actnopen.caption
+msgid "Open(&O) ..."
+msgstr ""
+
+#: tformmain.actnoptions.caption
+msgid "Options(&T) ..."
+msgstr ""
+
+#: tformmain.actnpaste.caption
+msgid "Paste(&V)"
+msgstr ""
+
+#: tformmain.actnprevnode.caption
+msgid "Prev Node(&P)"
+msgstr ""
+
+#: tformmain.actnprevsearchresult.caption
+msgid "Previous Search Result(&P)"
+msgstr ""
+
+#: tformmain.actnrecyclenode.caption
+msgid "Recycle Node(&D)"
+msgstr ""
+
+#: tformmain.actnredo.caption
+msgid "Redo(&R)"
+msgstr ""
+
+#: tformmain.actnrename.caption
+msgid "Rename(&R)"
+msgstr ""
+
+#: tformmain.actnrestorenode.caption
+msgid "Restore Node(&E)"
+msgstr ""
+
+#: tformmain.actnsave.caption
+msgid "Save(&S)"
+msgstr ""
+
+#: tformmain.actnsaveas.caption
+msgid "Save As(&A) ..."
+msgstr ""
+
+#: tformmain.actnsearch.caption
+msgid "Search(&F) ..."
+msgstr ""
+
+#: tformmain.actnselectall.caption
+msgid "Select All(&A)"
+msgstr ""
+
+#: tformmain.actntoggleinfobar.caption
+msgid "InfoBar(&I)"
+msgstr ""
+
+#: tformmain.actntogglemenubar.caption
+msgid "MenuBar(&M)"
+msgstr ""
+
+#: tformmain.actntogglerecybar.caption
+msgid "RecyBar(&R)"
+msgstr ""
+
+#: tformmain.actntogglestatbar.caption
+msgid "StatBar(&S)"
+msgstr ""
+
+#: tformmain.actntoggletheme.caption
+msgid "Toggle Theme(&T)"
+msgstr ""
+
+#: tformmain.actntoggletoolbar.caption
+msgid "ToolBar(&T)"
+msgstr ""
+
+#: tformmain.actntoggletreebar.caption
+msgid "TreeBar(&D)"
+msgstr ""
+
+#: tformmain.actnundo.caption
+msgid "Undo(&U)"
+msgstr ""
+
+#: tformmain.actnutils.caption
+msgid "Utils(&U) ..."
+msgstr ""
+
+#: tformmain.actnwordwrap.caption
+msgid "Line Wrapping(&W)"
+msgstr ""
+
+#: tformmain.mmiclearrecentfiles.caption
+msgid "Clear Recent Files(&C)"
+msgstr ""
+
+#: tformmain.mmiedit.caption
+msgid "&Edit"
+msgstr ""
+
+#: tformmain.mmifile.caption
+msgid "&File"
+msgstr ""
+
+#: tformmain.mmihelp.caption
+msgid "&Help"
+msgstr ""
+
+#: tformmain.mmilayout.caption
+msgid "Layout(&L)"
+msgstr ""
+
+#: tformmain.mminode.caption
+msgid "&Node"
+msgstr ""
+
+#: tformmain.mminote.caption
+msgid "&Text"
+msgstr ""
+
+#: tformmain.mmirecentfiles.caption
+msgid "Recent Files(&R)"
+msgstr ""
+
+#: tformmain.mmiview.caption
+msgid "&View"
+msgstr ""
+
+#: tformmain.pmiscript.caption
+msgid "Script(&S)"
+msgstr ""
+
+#: tformoptions.bttndefbrighttheme.caption
+msgid "Reset to default"
+msgstr ""
+
+#: tformoptions.caption
+msgid "Options"
+msgstr ""
+
+#: tformoptions.chkbdiscardhistory.caption
+msgid "Discard history to free memory (%s)"
+msgstr ""
+
+#: tformoptions.chkbinfobarautosize.caption
+msgid "Auto-adjust the InfoBar size (%)"
+msgstr ""
+
+#: tformoptions.chkbloadlastfile.caption
+msgid "Load the last file on startup"
+msgstr ""
+
+#: tformoptions.chkbrecybarautosize.caption
+msgid "Auto-adjust the RecyBar size (%)"
+msgstr ""
+
+#: tformoptions.chkbremovemenubaritem.caption
+msgid "Remove the \"MenuBar\" item in the context menu"
+msgstr ""
+
+#: tformoptions.chkbselectlastnode.caption
+msgid "Select the last node on loading"
+msgstr ""
+
+#: tformoptions.chkbswapokcancel.caption
+msgid "Swap the OK and Cancel buttons"
+msgstr ""
+
+#: tformoptions.chkbtreebarautosize.caption
+msgid "Auto-adjust the TreeBar size (%)"
+msgstr ""
+
+#: tformoptions.chkgfullwindowhidebars.caption
+msgid "The controls to hide when full window"
+msgstr ""
+
+#: tformoptions.chkgrememberwindowsize.caption
+msgid "Remember the window size"
+msgstr ""
+
+#: tformoptions.grpbbrighttheme.caption
+msgid "Bright Theme"
+msgstr ""
+
+#: tformoptions.grpbdarktheme.caption
+msgid "Dark Theme"
+msgstr ""
+
+#: tformoptions.lablautobackupcount.caption
+msgid "Auto-backup files count"
+msgstr ""
+
+#: tformoptions.lablautobackupinterval.caption
+msgid "Auto-backup interval (Minutes)"
+msgstr ""
+
+#: tformoptions.lablautosaveinterval.caption
+msgid "Auto-save interval (Minutes)"
+msgstr ""
+
+#: tformoptions.lablbrightbackcolor.caption
+msgid "Back Color"
+msgstr ""
+
+#: tformoptions.lablbrightforecolor.caption
+msgid "Fore Color"
+msgstr ""
+
+#: tformoptions.lablexpandsignsize.caption
+msgid "TreeView Expand Sign size"
+msgstr ""
+
+#: tformoptions.lablhistorymaxsize.caption
+msgid "Maximum size of one node's history(KB)"
+msgstr ""
+
+#: tformoptions.lablhistorymincount.caption
+msgid "Minimum count of one node's history"
+msgstr ""
+
+#: tformoptions.lablinfobarfontname.caption
+msgid "InfoBar Font"
+msgstr ""
+
+#: tformoptions.labllanguage.caption
+msgid "Language"
+msgstr ""
+
+#: tformoptions.lablnotebarfontname.caption
+msgid "NoteBar Font"
+msgstr ""
+
+#: tformoptions.lablrecentcountlimit.caption
+msgid "The count limit of recent searched strings"
+msgstr ""
+
+#: tformoptions.lablsearchcountlimit.caption
+msgid "The count limit of search results"
+msgstr ""
+
+#: tformoptions.labltreebarfontname.caption
+msgid "TreeBar Font"
+msgstr ""
+
+#: tformoptions.lablwindowfontname.caption
+msgid "Window Font"
+msgstr ""
+
+#: tformoptions.lablwindowfontsize.caption
+msgid "Size"
+msgstr ""
+
+#: tformsearch.chkbnamefilter.caption
+msgid "Name Filter(Regular)"
+msgstr ""
+
+#: tformsearch.chkbsearchinname.caption
+msgid "Search in name"
+msgstr ""
+
+#: tformsearch.chkbsearchinnote.caption
+msgid "Search in note"
+msgstr ""
+
+#: tformsearch.chkbuseregexpr.caption
+msgid "Regular expression"
+msgstr ""
+
+#: tformutils.actndeletenode.caption
+msgid "Delete Node(&D)"
+msgstr ""
+
+#: tformutils.caption
+msgid "Utils"
+msgstr ""
+
+#: tformutils.chkbaddprenumsp.caption
+msgid "Add prefix number (Length)"
+msgstr ""
+
+#: tformutils.chkbincludeseparatorsp.caption
+msgid "Include Separator"
+msgstr ""
+
+#: tformutils.chkbnamefiltersc.caption
+msgid "Name Filter"
+msgstr ""
+
+#: tformutils.chkbspecifydepthrn.caption
+msgid "Only affect at specified depth"
+msgstr ""
+
+#: tformutils.lablreplacern.caption
+msgid "Replace"
+msgstr ""
+
+#: tformutils.lablseparatorsp.caption
+msgid "Separator"
+msgstr ""
+
+#: tformutils.labltitlesp.caption
+msgid "Title"
+msgstr ""
+
+#: tformutils.radgsearchinrn.caption
+msgid "Search In"
+msgstr ""
+
+#: tformutils.radgsortdirection.caption
+msgid "Sort Direction"
+msgstr ""
+
+#: tformutils.radgsortof.caption
+msgid "Sort Of"
+msgstr ""
+
+#: tformutils.tabsrename.caption
+msgid "Rename"
+msgstr ""
+
+#: tformutils.tabsscript.caption
+msgid "Script"
+msgstr ""
+
+#: tformutils.tabssort.caption
+msgid "Sort"
+msgstr ""
+
+#: tformutils.tabssplit.caption
+msgid "Split"
+msgstr ""
+
+#: uresources.res_autosaveinfo
+msgid "[ Save: %dm | Backup: %dm ]"
+msgstr ""
+
+#: uresources.res_backupdbfail
+msgid "Failed to backup the database!"
+msgstr ""
+
+#: uresources.res_captioncancel
+msgid "Cancel(&C)"
+msgstr ""
+
+#: uresources.res_captioneditscript
+msgid "Edit Script(&S)"
+msgstr ""
+
+#: uresources.res_captionendedit
+msgid "End Edit(&S)"
+msgstr ""
+
+#: uresources.res_captionexecute
+msgid "Execute(&E)"
+msgstr ""
+
+#: uresources.res_captionexport
+msgid "Export(&E)"
+msgstr ""
+
+#: uresources.res_captionimport
+msgid "Import(&I)"
+msgstr ""
+
+#: uresources.res_captionok
+msgid "OK(&O)"
+msgstr ""
+
+#: uresources.res_captionreplace
+msgid "Replace(&R)"
+msgstr ""
+
+#: uresources.res_captionsearch
+msgid "Search(&S)"
+msgstr ""
+
+#: uresources.res_childnodesinfo
+msgid "Child Nodes: %d"
+msgstr ""
+
+#: uresources.res_closedbfail
+msgid "Failed to close the database!"
+msgstr ""
+
+#: uresources.res_createdbfail
+msgid "Failed to create the database!"
+msgstr ""
+
+#: uresources.res_dbislocked
+msgid "Database is locked. Do you want to force open it?"
+msgstr ""
+
+#: uresources.res_dbversionerror
+msgid "Database version error!"
+msgstr ""
+
+#: uresources.res_deletenodetip
+msgid "The node can't be recovered after delete. Do you want to continue?"
+msgstr ""
+
+#: uresources.res_dialogfiltertdb
+msgid "TomiNote File|*.tdb|All File|*.*"
+msgstr ""
+
+#: uresources.res_dialogfiltertxt
+msgid "Text File|*.txt|All File|*.*"
+msgstr ""
+
+#: uresources.res_emptyrecyclertip
+msgid "The nodes can't be recovered after empty. Do you want to continue?"
+msgstr ""
+
+#: uresources.res_exportfromitems
+msgid ""
+"Selected Node  \n"
+"Selected Branch\n"
+"All Nodes      \n"
+msgstr ""
+
+#: uresources.res_exporttoitems
+msgid ""
+"To file     \n"
+"To directory\n"
+"To database \n"
+msgstr ""
+
+#: uresources.res_hidebarsitems
+msgid ""
+"MenuBar\n"
+"ToolBar\n"
+"StatBar\n"
+"TreeBar\n"
+"RecyBar\n"
+"InfoBar\n"
+msgstr ""
+
+#: uresources.res_ignorecase
+msgid "Ignore Case"
+msgstr ""
+
+#: uresources.res_importfromitems
+msgid ""
+"From file     \n"
+"From directory\n"
+"From database \n"
+msgstr ""
+
+#: uresources.res_importtoitems
+msgid ""
+"To prev node\n"
+"To first child\n"
+"To next node\n"
+"To last child\n"
+msgstr ""
+
+#: uresources.res_keepwindowsizeitems
+msgid ""
+"Main\n"
+"Search\n"
+"Import\n"
+"Export\n"
+"Options\n"
+"Utils\n"
+msgstr ""
+
+#: uresources.res_langlist
+msgid "af=Afrikaans|am=Amharic|ar=Arabic|ar_ae=Arabic(United Arab Emirates)|ar_bh=Arabic(Bahrain)|ar_dz=Arabic(Algeria)|ar_eg=Arabic(Egypt)|ar_iq=Arabic(Iraq)|ar_jo=Arabic(Jordan)|ar_kw=Arabic(Kuwait)|ar_lb=Arabic(Lebanon)|ar_ly=Arabic(Libya)|ar_ma=Arabic(Morocco)|ar_om=Arabic(Oman)|ar_qa=Arabic(Qatar)|ar_sa=Arabic(Saudi Arabia)|ar_sy=Arabic(Syria)|ar_tn=Arabic(Tunisia)|ar_ye=Arabic(Yemen)|as=Assamese|az=Azeri|az_az=Azeri(Cyrillic)|be=Belarusian|bg=Bulgarian|bn=Bengali|bo=Tibetan|bs=Bosnian|ca=Catalan|cs=Czech|cy=Welsh|da=Danish|de=German|de_at=German(Austria)|de_ch=German(Switzerland)|de_de=German(Germany)|de_li=German(Liechtenstein)|de_lu=German(Luxembourg)|dv=Maldivian|el=Greek|en=English|en_au=English(Australia)|en_bz=English(Belize)|en_ca=English(Canada)|en_cb=English(Caribbean)|en_gb=English(Great Britain)|en_ie=English(Ireland)|en_in=English(India)|en_jm=English(Jamaica)|en_nz=English(New Zealand)|en_ph=English(Philippines)|en_tt=English(Trinidad)|en_us=English(United States)|en_za=English(Southern Africa)|es=Spanish|es_ar=Spanish(Argentina)|es_bo=Spanish(Bolivia)|es_cl=Spanish(Chile)|es_co=Spanish(Colombia)|es_cr=Spanish(Costa Rica)|es_do=Spanish(Dominican Republic)|es_ec=Spanish(Ecuador)|es_es=Spanish(Traditional)|es_gt=Spanish(Guatemala)|es_hn=Spanish(Honduras)|es_mx=Spanish(Mexico)|es_ni=Spanish(Nicaragua)|es_pa=Spanish(Panama)|es_pe=Spanish(Peru)|es_pr=Spanish(Puerto Rico)|es_py=Spanish(Paraguay)|es_sv=Spanish(ElSalvador)|es_uy=Spanish(Uruguay)|es_ve=Spanish(Venezuela)|et=Estonian|eu=Basque|fa=Farsi|fi=Finnish|fo=Faroese|fr=French|fr_be=French(Belgium)|fr_ca=French(Canada)|fr_ch=French(Switzerland)|fr_fr=French(France)|fr_lu=French(Luxembourg)|ga=Irish|gd=Gaelic(Scotland)|gd_ie=Gaelic(Ireland)|gl=Galician|gn=Guarani(Paraguay)|gu=Gujarati|he=Hebrew|hi=Hindi|hr=Croatian|hu=Hungarian|hy=Armenian|id=Indonesian|is=Icelandic|it=Italian|it_ch=Italian(Switzerland)|it_it=Italian(Italy)|ja=Japanese|ka=Georgian|kk=Kazakh|km=Khmer|kn=Kannada|ko=Korean|ks=Kashmiri|la=Latin|lo=Lao|lt=Lithuanian|lv=Latvian|mi=Maori|mk=FYRO Macedonia|ml=Malayalam|mn=Mongolian|mr=Marathi|ms=Malay|ms_bn=Malay(Brunei)|ms_my=Malay(Malaysia)|mt=Maltese|my=Burmese|nb=Norwegian(Bokml)|ne=Nepali|nl=Dutch|nl_be=Dutch(Belgium)|nl_nl=Dutch(Netherlands)|no=Norwegian|or=Oriya|pa=Punjabi|pl=Polish|pt=Portuguese|pt_br=Portuguese(Brazil)|pt_pt=Portuguese(Portugal)|rm=Raeto(Romance)|ro=Romanian|ro_mo=Romanian(Moldova)|ru=Russian|ru_mo=Russian(Moldova)|sa=Sanskrit|sb=Sorbian|sd=Sindhi|si=Sinhalese|sk=Slovak|sl=Slovenian|so=Somali|sq=Albanian|sr=Serbian(Latin)|sr_sp=Serbian(Cyrillic)|sv=Swedish|sv_fi=Swedish(Finland)|sv_se=Swedish(Sweden)|sw=Swahili|sz=Sami(lappish)|ta=Tamil|te=Telugu|tg=Tajik|th=Thai|tk=Turkmen|tn=Setswana|tr=Turkish|ts=Tsonga|tt=Tatar|uk=Ukrainian|ur=Urdu|uz=Uzbek(Latin)|uz_uz=Uzbek(Cyrillic)|ve=Venda|vi=Vietnamese|xh=Xhosa|yi=Yiddish|zh=Chinese|zh_cn=Chinese(China)|zh_hk=Chinese(Hong Kong SAR)|zh_mo=Chinese(Macau SAR)|zh_sg=Chinese(Singapore)|zh_tw=Chinese(Taiwan)|zu=Zulu"
+msgstr ""
+
+#: uresources.res_multiline
+msgid "Multi-Line"
+msgstr ""
+
+#: uresources.res_multireplacetip
+msgid "Multiple nodes will be changed. Do you want to continue?"
+msgstr ""
+
+#: uresources.res_nongreedy
+msgid "Non-Greedy"
+msgstr ""
+
+#: uresources.res_opendbfail
+msgid "Failed to open the database!"
+msgstr ""
+
+#: uresources.res_optionstabsitems
+msgid ""
+"General\n"
+"Layout\n"
+"Theme\n"
+"Other\n"
+msgstr ""
+
+#: uresources.res_overwritefilefail
+msgid "Failed to overwrite the file!"
+msgstr ""
+
+#: uresources.res_overwritefiletip
+msgid "The file already exists. Do you want to overwrite it?"
+msgstr ""
+
+#: uresources.res_recentfilenotexists
+msgid "The file doesn't exists. Do you want to remove the menu item?"
+msgstr ""
+
+#: uresources.res_renamewarning
+msgid "Multiple nodes will be renamed and can't be undone. Do you want to continue?"
+msgstr ""
+
+#: uresources.res_savedatatip
+msgid "The data has changed. Do you want to save it?"
+msgstr ""
+
+#: uresources.res_savedbfail
+msgid "Failed to save the database!"
+msgstr ""
+
+#: uresources.res_scarchresultpart
+msgid "Part %d [ %s | %ds ]"
+msgstr ""
+
+#: uresources.res_scarchresulttotal
+msgid "Total %d [ %s | %ds ]"
+msgstr ""
+
+#: uresources.res_searchfromitems
+msgid ""
+"Selected node\n"
+"Selected branch\n"
+"All nodes\n"
+msgstr ""
+
+#: uresources.res_searchinitems
+msgid ""
+"Node Name\n"
+"Node Note\n"
+msgstr ""
+
+#: uresources.res_searchresultindex
+msgid "Search Result: %d / %d"
+msgstr ""
+
+#: uresources.res_sortdirectionitems
+msgid ""
+"Ascending\n"
+"Descending\n"
+msgstr ""
+
+#: uresources.res_sortofitems
+msgid ""
+"Sibling\n"
+"Children\n"
+msgstr ""
+
+#: uresources.res_textsearch
+msgid "Search"
+msgstr ""
+
+#: uresources.res_titleopendlg
+msgid "Open File"
+msgstr ""
+
+#: uresources.res_titlesavedlg
+msgid "Save File"
+msgstr ""
+
+#: uresources.res_titleseldirdlg
+msgid "Select Directory"
+msgstr ""
+
+#: uresources.res_unnamednode
+msgid "Unnamed Node"
+msgstr ""
+

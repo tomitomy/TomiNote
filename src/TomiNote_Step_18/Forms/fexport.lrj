@@ -1,0 +1,5 @@
+{"version":1,"strings":[
+{"hash":80705172,"name":"tformexport.caption","sourcebytes":[69,120,112,111,114,116],"value":"Export"},
+{"hash":19846370,"name":"tformexport.chkbaddseparator.caption","sourcebytes":[65,100,100,32,83,101,112,97,114,97,116,111,114],"value":"Add Separator"},
+{"hash":116954734,"name":"tformexport.chkbaddfileext.caption","sourcebytes":[65,100,100,32,102,105,108,101,32,101,120,116,101,110,115,105,111,110],"value":"Add file extension"}
+]}

@@ -1,0 +1,1143 @@
+object formOptions: TformOptions
+  Left = 360
+  Height = 480
+  Top = 123
+  Width = 640
+  Caption = 'Options'
+  ClientHeight = 480
+  ClientWidth = 640
+  OnClose = FormClose
+  OnCreate = FormCreate
+  Position = poDesktopCenter
+  LCLVersion = '1.8.0.4'
+  object lstbTabs: TListBox
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = pagcMain
+    AnchorSideBottom.Control = pagcMain
+    AnchorSideBottom.Side = asrBottom
+    Left = 8
+    Height = 418
+    Top = 8
+    Width = 120
+    Anchors = [akTop, akLeft, akBottom]
+    BorderSpacing.Left = 8
+    Items.Strings = (
+      'General'
+      'Layout'
+      'Theme'
+      'Other'
+    )
+    ItemHeight = 24
+    OnSelectionChange = lstbTabsSelectionChange
+    TabOrder = 0
+  end
+  object pagcMain: TPageControl
+    AnchorSideLeft.Control = lstbTabs
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = Owner
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
+    Left = 134
+    Height = 418
+    Top = 8
+    Width = 498
+    ActivePage = tabsGeneral
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    BorderSpacing.Left = 6
+    BorderSpacing.Top = 8
+    BorderSpacing.Right = 8
+    BorderSpacing.Bottom = 54
+    TabIndex = 0
+    TabOrder = 1
+    object tabsGeneral: TTabSheet
+      Caption = '-General'
+      ClientHeight = 386
+      ClientWidth = 494
+      object chkbLoadLastFile: TCheckBox
+        AnchorSideLeft.Control = tabsGeneral
+        AnchorSideTop.Control = tabsGeneral
+        AnchorSideRight.Control = tabsGeneral
+        AnchorSideRight.Side = asrBottom
+        Left = 6
+        Height = 24
+        Top = 8
+        Width = 482
+        Anchors = [akTop, akLeft, akRight]
+        BorderSpacing.Left = 6
+        BorderSpacing.Top = 8
+        BorderSpacing.Right = 6
+        Caption = 'Load the last file on startup'
+        TabOrder = 0
+      end
+      object chkbSelectLastNode: TCheckBox
+        AnchorSideLeft.Control = tabsGeneral
+        AnchorSideTop.Control = chkbLoadLastFile
+        AnchorSideTop.Side = asrBottom
+        AnchorSideRight.Control = tabsGeneral
+        AnchorSideRight.Side = asrBottom
+        Left = 6
+        Height = 24
+        Top = 38
+        Width = 482
+        Anchors = [akTop, akLeft, akRight]
+        BorderSpacing.Left = 6
+        BorderSpacing.Top = 6
+        BorderSpacing.Right = 6
+        Caption = 'Select the last node on loading'
+        TabOrder = 1
+      end
+      object lablAutoSaveInterval: TLabel
+        AnchorSideLeft.Control = tabsGeneral
+        AnchorSideTop.Control = editAutoSaveInterval
+        AnchorSideTop.Side = asrCenter
+        AnchorSideRight.Control = editAutoSaveInterval
+        Left = 6
+        Height = 23
+        Top = 85
+        Width = 396
+        Anchors = [akTop, akLeft, akRight]
+        BorderSpacing.Left = 6
+        BorderSpacing.Right = 6
+        Caption = 'Auto-save interval (Minutes)'
+        ParentColor = False
+      end
+      object editAutoSaveInterval: TEdit
+        AnchorSideTop.Control = chkbSelectLastNode
+        AnchorSideTop.Side = asrBottom
+        AnchorSideRight.Control = tabsGeneral
+        AnchorSideRight.Side = asrBottom
+        Left = 408
+        Height = 33
+        Top = 80
+        Width = 80
+        Anchors = [akTop, akRight]
+        BorderSpacing.Top = 18
+        BorderSpacing.Right = 6
+        OnMouseWheel = editMouseWheel0
+        TabOrder = 2
+      end
+      object lablAutoBackupInterval: TLabel
+        AnchorSideLeft.Control = tabsGeneral
+        AnchorSideTop.Control = editAutoBackupInterval
+        AnchorSideTop.Side = asrCenter
+        AnchorSideRight.Control = editAutoBackupInterval
+        Left = 6
+        Height = 23
+        Top = 120
+        Width = 396
+        Anchors = [akTop, akLeft, akRight]
+        BorderSpacing.Left = 6
+        BorderSpacing.Right = 6
+        Caption = 'Auto-backup interval (Minutes)'
+        ParentColor = False
+      end
+      object editAutoBackupInterval: TEdit
+        AnchorSideTop.Control = editAutoSaveInterval
+        AnchorSideTop.Side = asrBottom
+        AnchorSideRight.Control = tabsGeneral
+        AnchorSideRight.Side = asrBottom
+        Left = 408
+        Height = 33
+        Top = 115
+        Width = 80
+        Anchors = [akTop, akRight]
+        BorderSpacing.Top = 2
+        BorderSpacing.Right = 6
+        OnMouseWheel = editMouseWheel0
+        TabOrder = 3
+      end
+      object lablAutoBackupCount: TLabel
+        AnchorSideLeft.Control = tabsGeneral
+        AnchorSideTop.Control = editAutoBackupCount
+        AnchorSideTop.Side = asrCenter
+        AnchorSideRight.Control = editAutoBackupCount
+        Left = 6
+        Height = 23
+        Top = 155
+        Width = 396
+        Anchors = [akTop, akLeft, akRight]
+        BorderSpacing.Left = 6
+        BorderSpacing.Right = 6
+        Caption = 'Auto-backup files count'
+        ParentColor = False
+      end
+      object editAutoBackupCount: TEdit
+        AnchorSideTop.Control = editAutoBackupInterval
+        AnchorSideTop.Side = asrBottom
+        AnchorSideRight.Control = tabsGeneral
+        AnchorSideRight.Side = asrBottom
+        Left = 408
+        Height = 33
+        Top = 150
+        Width = 80
+        Anchors = [akTop, akRight]
+        BorderSpacing.Top = 2
+        BorderSpacing.Right = 6
+        OnMouseWheel = editMouseWheel0
+        TabOrder = 4
+      end
+      object lablHistoryMaxSize: TLabel
+        AnchorSideLeft.Control = tabsGeneral
+        AnchorSideTop.Control = editHistoryMaxSize
+        AnchorSideTop.Side = asrCenter
+        AnchorSideRight.Control = editHistoryMaxSize
+        Left = 6
+        Height = 23
+        Top = 206
+        Width = 396
+        Anchors = [akTop, akLeft, akRight]
+        BorderSpacing.Left = 6
+        BorderSpacing.Right = 6
+        Caption = 'Maximum size of one node''s history(KB)'
+        ParentColor = False
+      end
+      object editHistoryMaxSize: TEdit
+        AnchorSideTop.Control = editAutoBackupCount
+        AnchorSideTop.Side = asrBottom
+        AnchorSideRight.Control = tabsGeneral
+        AnchorSideRight.Side = asrBottom
+        Left = 408
+        Height = 33
+        Top = 201
+        Width = 80
+        Anchors = [akTop, akRight]
+        BorderSpacing.Top = 18
+        BorderSpacing.Right = 6
+        OnMouseWheel = editMouseWheel0
+        TabOrder = 5
+      end
+      object lablHistoryMinCount: TLabel
+        AnchorSideLeft.Control = tabsGeneral
+        AnchorSideTop.Control = editHistoryMinCount
+        AnchorSideTop.Side = asrCenter
+        AnchorSideRight.Control = editHistoryMinCount
+        Left = 6
+        Height = 23
+        Top = 241
+        Width = 396
+        Anchors = [akTop, akLeft, akRight]
+        BorderSpacing.Left = 6
+        BorderSpacing.Right = 6
+        Caption = 'Minimum count of one node''s history'
+        ParentColor = False
+      end
+      object editHistoryMinCount: TEdit
+        AnchorSideLeft.Side = asrBottom
+        AnchorSideTop.Control = editHistoryMaxSize
+        AnchorSideTop.Side = asrBottom
+        AnchorSideRight.Control = tabsGeneral
+        AnchorSideRight.Side = asrBottom
+        Left = 408
+        Height = 33
+        Top = 236
+        Width = 80
+        Anchors = [akTop, akRight]
+        BorderSpacing.Top = 2
+        BorderSpacing.Right = 6
+        OnMouseWheel = editMouseWheel0
+        TabOrder = 6
+      end
+      object chkbDiscardHistory: TCheckBox
+        AnchorSideLeft.Control = tabsGeneral
+        AnchorSideTop.Control = editHistoryMinCount
+        AnchorSideTop.Side = asrBottom
+        AnchorSideBottom.Side = asrBottom
+        Left = 6
+        Height = 24
+        Top = 275
+        Width = 341
+        BorderSpacing.Left = 6
+        BorderSpacing.Top = 6
+        BorderSpacing.Right = 6
+        Caption = 'Discard history to free memory (%s)'
+        TabOrder = 7
+      end
+      object lablLanguage: TLabel
+        AnchorSideLeft.Control = tabsGeneral
+        AnchorSideTop.Control = combLanguage
+        AnchorSideTop.Side = asrCenter
+        Left = 6
+        Height = 23
+        Top = 343
+        Width = 56
+        BorderSpacing.Left = 6
+        Caption = 'Language'
+        ParentColor = False
+      end
+      object imagLanguage: TImage
+        AnchorSideLeft.Control = lablLanguage
+        AnchorSideLeft.Side = asrBottom
+        AnchorSideTop.Control = combLanguage
+        AnchorSideTop.Side = asrCenter
+        Left = 68
+        Height = 24
+        Top = 342
+        Width = 24
+        BorderSpacing.Left = 6
+        Picture.Data = {
+          1754506F727461626C654E6574776F726B477261706869636E09000089504E47
+          0D0A1A0A0000000D4948445200000018000000180806000000E0773DF8000000
+          06624B474400FF00FF00FFA0BDA7930000092349444154480D011809E7F60100
+          00000000000000A06D37A30A0C0A5CFEF8F4EAEAE6E5306EA9E6E7117BCF0AFC
+          030A0BFE000309FBFF0101FF000000010000000802FFFD06F9EDEBEC8837F92E
+          B7FF00D2490100000000002CA5FF00D45B01000000000030B5FF00D04B010004
+          0000000000000000FEFBFA442A474A00D4BBBF169E147E4D0E8247202916032F
+          24160830130A051A0C08000003010000FDFE0000ECF6FE00C0D904AC108ADCA6
+          D24901AF36D6FF00CA2A0100D45B01001072C21B141C1F5BD04B018A00000000
+          04000000000000000000FF00FCFEF8F600BB084E00324C6190721F0209180D01
+          00EBFC0200F3FD0100FB000000FC0200000F0300001FFB00004E3011545E9FDE
+          31000000AFCA2A0100167CCC30FA040E85291B0D37FAFBFCFA0000008A000000
+          00040000000000000000000000000200FF00F7FC02003E210609ADE20000F3FC
+          00000D0700001209000011090000130B0000EBF50000D0E90000732E0100FDFF
+          02233497E4FFF9FCFF0027160800452A10004926040057A1E5E4000000000000
+          000004000000000000000000000000000000000001FF00FAFD0000DCF000001F
+          0F00000A040000070300000401000001000000040100000A040000E5F400000F
+          090200A8671B00EAF30000E1F10000C5E6000017EA0000FBFD00000000000000
+          000000040000000000000000000000000000000003000000F2FA000007030000
+          020100000000000000000000FF000000000000000000000002010000F5FD0000
+          F9FCFF00AADD0000F2F60000E8F40000E0F000003013000000FF000000000000
+          00000000020000000000000000000000000000000001010000F3FA0000020100
+          0000000000000000000000000000000000000000000000000001000000F4FA00
+          0002010000FCFC0000000000000301000006020000F2FA0000FEFF0000000000
+          0000000000020000000000000000000000000000000002000000F3FC00000100
+          000000000000000000000000000000000000000000000000000002010000F3FC
+          000002000000FCFE000001000000FF00000001020000F2FA0000FE0000000000
+          000000000000020000000000000000000000000000000002010000F1F9000002
+          02000000000000000000000000000000000000000000000000000002010000F4
+          FB000001010000FCFD0000000000000000000002000000F0FA0000FEFF000000
+          00000000000000020000000000000000000000000000000000010000F4FB0000
+          0200000000000000000000000000000000000000000000000000000001000000
+          F3FC000002FF0000FCFE0000000100000100000002010000F1FB0000FFFE0000
+          0000000000000000040000000000000000000000000000000002010000F2FB00
+          00020100000101000004040000070600000B0900000D0A000001020000060500
+          00F4FB000001010000FCFC0000030600000000000001000000F2FA0000FD0000
+          000000000000000000040000000000000000000000000000000003000100F2FD
+          00000C050000FCFAFE00E4EEF600DDF9FA00F1F2F900020101000D0B05000D0E
+          080005100B0002010000FDFD000000000000FFFF000003010000F2FB0000FF00
+          000000000000000000000400000000000000000000000000000000FF030300F2
+          ECF8FBF4EFE4F1F8F0EDE2F8E3D1C0F2C8A5C6F7D9C2DE000000020000000E1E
+          77BF7A0817234403050400FE000000030300000201FF000000FF00EFECF8FFFD
+          FAF9F4000000000000000004000000000000000000000000FD01030029F9CF00
+          C0C59B91D99E6EA3000000EE000000F8000000F9010305FCFFFDFCFF0000FF04
+          F9DAC0940607060604121E3EDBE4F4000402FE00EDEBF0EEEAE1E0D1F8EAE2D5
+          F7DCC2AF00000003000000FD04000000000000000000000000FD0103001FF9D6
+          0031D1ADB1DA0000D8000102FC00FFFEFF000000FFFFFDFB000000000002070B
+          01E9AF81BEEFC4A1DF071C2D26E1FCFE08FFFFFFFD00FAF5EEFBE8D8E4FDF2E9
+          EB000000F4030A10FEFDF6F0000400000000000000000000000000000000FA00
+          07000C0F11F70000F1FA00FFFE0000000000000000000000000000000000FEF9
+          F5FF000000F3FAEBE0D7FAEBE0E000000003000000FE000000FC000000F80000
+          00FD00000000FDF6F00000000000040000000000000000000000000000000000
+          000000FE00000000000000000000000000000000000000000000000000000000
+          00000000000000000000FB000000FB0000000000000000000000000000000000
+          0000000000000000000000000000000200000000000000000000000000000000
+          0000000001000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000002000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          000000000000000000000000000000000002000000000000000000FF00000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000200000000000000000001000000
+          00010000010000FFFF0000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000002000000000000000001030202
+          FDFAFA0001010100020201010000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000040000000000000002E8F3FC
+          A5DC9BAE1A0B0B0904E1ECF7F100000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          00000000000000000000000000000000000000000001000000000A070403F6F9
+          FC0E00000009000000FD000000F2000000F70000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000084CF8249C5523A6B0000
+          000049454E44AE426082
+        }
+      end
+      object combLanguage: TComboBox
+        AnchorSideLeft.Control = imagLanguage
+        AnchorSideLeft.Side = asrBottom
+        AnchorSideTop.Control = chkbDiscardHistory
+        AnchorSideTop.Side = asrBottom
+        AnchorSideRight.Control = tabsGeneral
+        AnchorSideRight.Side = asrBottom
+        Left = 98
+        Height = 37
+        Top = 336
+        Width = 390
+        Anchors = [akTop, akLeft, akRight]
+        BorderSpacing.Left = 6
+        BorderSpacing.Top = 18
+        ItemHeight = 0
+        Style = csDropDownList
+        TabOrder = 8
+      end
+    end
+    object tabsLayout: TTabSheet
+      Caption = '-Layout'
+      ClientHeight = 386
+      ClientWidth = 494
+      object chkgFullWindowHideBars: TCheckGroup
+        AnchorSideTop.Control = tabsLayout
+        Left = 0
+        Height = 80
+        Top = 8
+        Width = 494
+        Align = alTop
+        AutoFill = True
+        AutoSize = True
+        BorderSpacing.Top = 8
+        Caption = 'The controls to hide when full window'
+        ChildSizing.LeftRightSpacing = 6
+        ChildSizing.TopBottomSpacing = 6
+        ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+        ChildSizing.EnlargeVertical = crsHomogenousChildResize
+        ChildSizing.ShrinkHorizontal = crsScaleChilds
+        ChildSizing.ShrinkVertical = crsScaleChilds
+        ChildSizing.Layout = cclLeftToRightThenTopToBottom
+        ChildSizing.ControlsPerLine = 3
+        ClientHeight = 60
+        ClientWidth = 490
+        Columns = 3
+        Items.Strings = (
+          'MenuBar'
+          'ToolBar'
+          'StatBar'
+          'TreeBar'
+          'RecyBar'
+          'InfoBar'
+        )
+        TabOrder = 0
+        Data = {
+          06000000020202020202
+        }
+      end
+      object chkbTreeBarAutoSize: TCheckBox
+        AnchorSideLeft.Control = tabsLayout
+        AnchorSideTop.Control = editTreeBarPercent
+        AnchorSideTop.Side = asrCenter
+        AnchorSideRight.Control = editTreeBarPercent
+        Left = 6
+        Height = 24
+        Top = 100
+        Width = 396
+        Anchors = [akTop, akLeft, akRight]
+        BorderSpacing.Left = 6
+        BorderSpacing.Right = 6
+        Caption = 'Auto-adjust the TreeBar size (%)'
+        OnChange = chkbTreeBarAutoSizeChange
+        TabOrder = 1
+      end
+      object editTreeBarPercent: TEdit
+        AnchorSideTop.Control = chkgFullWindowHideBars
+        AnchorSideTop.Side = asrBottom
+        AnchorSideRight.Control = tabsLayout
+        AnchorSideRight.Side = asrBottom
+        Left = 408
+        Height = 33
+        Top = 96
+        Width = 80
+        Anchors = [akTop, akRight]
+        BorderSpacing.Top = 8
+        BorderSpacing.Right = 6
+        OnMouseWheel = editMouseWheel1
+        TabOrder = 2
+      end
+      object chkbRecyBarAutoSize: TCheckBox
+        AnchorSideLeft.Control = tabsLayout
+        AnchorSideTop.Control = editRecyBarPercent
+        AnchorSideTop.Side = asrCenter
+        AnchorSideRight.Control = editRecyBarPercent
+        Left = 6
+        Height = 24
+        Top = 135
+        Width = 396
+        Anchors = [akTop, akLeft, akRight]
+        BorderSpacing.Left = 6
+        BorderSpacing.Right = 6
+        Caption = 'Auto-adjust the RecyBar size (%)'
+        OnChange = chkbRecyBarAutoSizeChange
+        TabOrder = 3
+      end
+      object editRecyBarPercent: TEdit
+        AnchorSideTop.Control = editTreeBarPercent
+        AnchorSideTop.Side = asrBottom
+        AnchorSideRight.Control = tabsLayout
+        AnchorSideRight.Side = asrBottom
+        Left = 408
+        Height = 33
+        Top = 131
+        Width = 80
+        Anchors = [akTop, akRight]
+        BorderSpacing.Top = 2
+        BorderSpacing.Right = 6
+        OnMouseWheel = editMouseWheel1
+        TabOrder = 4
+      end
+      object chkbInfoBarAutoSize: TCheckBox
+        AnchorSideLeft.Control = tabsLayout
+        AnchorSideTop.Control = editInfoBarPercent
+        AnchorSideTop.Side = asrCenter
+        AnchorSideRight.Control = editInfoBarPercent
+        Left = 6
+        Height = 24
+        Top = 170
+        Width = 396
+        Anchors = [akTop, akLeft, akRight]
+        BorderSpacing.Left = 6
+        BorderSpacing.Right = 6
+        Caption = 'Auto-adjust the InfoBar size (%)'
+        OnChange = chkbInfoBarAutoSizeChange
+        TabOrder = 5
+      end
+      object editInfoBarPercent: TEdit
+        AnchorSideTop.Control = editRecyBarPercent
+        AnchorSideTop.Side = asrBottom
+        AnchorSideRight.Control = tabsLayout
+        AnchorSideRight.Side = asrBottom
+        Left = 408
+        Height = 33
+        Top = 166
+        Width = 80
+        Anchors = [akTop, akRight]
+        BorderSpacing.Top = 2
+        BorderSpacing.Right = 6
+        OnMouseWheel = editMouseWheel1
+        TabOrder = 6
+      end
+      object chkgRememberWindowSize: TCheckGroup
+        AnchorSideLeft.Control = tabsLayout
+        AnchorSideTop.Control = editInfoBarPercent
+        AnchorSideTop.Side = asrBottom
+        AnchorSideRight.Control = tabsLayout
+        AnchorSideRight.Side = asrBottom
+        Left = 0
+        Height = 80
+        Top = 211
+        Width = 494
+        Anchors = [akTop, akLeft, akRight]
+        AutoFill = True
+        AutoSize = True
+        BorderSpacing.Top = 12
+        Caption = 'Remember the window size'
+        ChildSizing.LeftRightSpacing = 6
+        ChildSizing.TopBottomSpacing = 6
+        ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+        ChildSizing.EnlargeVertical = crsHomogenousChildResize
+        ChildSizing.ShrinkHorizontal = crsScaleChilds
+        ChildSizing.ShrinkVertical = crsScaleChilds
+        ChildSizing.Layout = cclLeftToRightThenTopToBottom
+        ChildSizing.ControlsPerLine = 4
+        ClientHeight = 60
+        ClientWidth = 490
+        Columns = 4
+        Items.Strings = (
+          'Main'
+          'Search'
+          'Import'
+          'Export'
+          'Options'
+          'Utils'
+        )
+        TabOrder = 7
+        Data = {
+          06000000020202020202
+        }
+      end
+      object chkbSwapOKCancel: TCheckBox
+        AnchorSideLeft.Control = tabsLayout
+        AnchorSideTop.Control = chkgRememberWindowSize
+        AnchorSideTop.Side = asrBottom
+        AnchorSideRight.Control = tabsLayout
+        AnchorSideRight.Side = asrBottom
+        Left = 6
+        Height = 24
+        Top = 303
+        Width = 482
+        Anchors = [akTop, akLeft, akRight]
+        BorderSpacing.Left = 6
+        BorderSpacing.Top = 12
+        BorderSpacing.Right = 6
+        Caption = 'Swap the OK and Cancel buttons'
+        TabOrder = 8
+      end
+      object chkbRemoveMenuBarItem: TCheckBox
+        AnchorSideLeft.Control = tabsLayout
+        AnchorSideTop.Control = chkbSwapOKCancel
+        AnchorSideTop.Side = asrBottom
+        AnchorSideRight.Control = tabsLayout
+        AnchorSideRight.Side = asrBottom
+        Left = 6
+        Height = 24
+        Top = 333
+        Width = 482
+        Anchors = [akTop, akLeft, akRight]
+        BorderSpacing.Left = 6
+        BorderSpacing.Top = 6
+        BorderSpacing.Right = 6
+        BorderSpacing.Bottom = 6
+        Caption = 'Remove the "MenuBar" item in the context menu'
+        TabOrder = 9
+      end
+    end
+    object tabsTheme: TTabSheet
+      Caption = '-Theme'
+      ClientHeight = 386
+      ClientWidth = 494
+      object lablWindowFontName: TLabel
+        AnchorSideLeft.Control = tabsTheme
+        AnchorSideTop.Control = editWindowFontSize
+        AnchorSideTop.Side = asrCenter
+        AnchorSideRight.Control = combWindowFontName
+        Left = 6
+        Height = 23
+        Top = 11
+        Width = 126
+        Anchors = [akTop, akLeft, akRight]
+        BorderSpacing.Left = 6
+        Caption = 'Window Font'
+        ParentColor = False
+      end
+      object combWindowFontName: TComboBox
+        AnchorSideLeft.Control = combNoteBarFontName
+        AnchorSideTop.Control = editWindowFontSize
+        AnchorSideTop.Side = asrCenter
+        AnchorSideRight.Control = lablWindowFontSize
+        Left = 132
+        Height = 35
+        Top = 5
+        Width = 228
+        Anchors = [akTop, akLeft, akRight]
+        BorderSpacing.Right = 6
+        ItemHeight = 0
+        TabOrder = 0
+      end
+      object lablWindowFontSize: TLabel
+        AnchorSideTop.Control = editWindowFontSize
+        AnchorSideTop.Side = asrCenter
+        AnchorSideRight.Control = editWindowFontSize
+        Left = 366
+        Height = 23
+        Top = 11
+        Width = 36
+        Anchors = [akTop, akRight]
+        BorderSpacing.Right = 6
+        Caption = 'Size'
+        ParentColor = False
+      end
+      object editWindowFontSize: TEdit
+        AnchorSideTop.Control = tabsTheme
+        AnchorSideRight.Control = tabsTheme
+        AnchorSideRight.Side = asrBottom
+        Left = 408
+        Height = 33
+        Top = 6
+        Width = 80
+        Anchors = [akTop, akRight]
+        BorderSpacing.Top = 6
+        BorderSpacing.Right = 6
+        OnMouseWheel = editMouseWheel0
+        TabOrder = 1
+      end
+      object lablTreeBarFontName: TLabel
+        AnchorSideLeft.Control = tabsTheme
+        AnchorSideTop.Control = editTreeBarFontSize
+        AnchorSideTop.Side = asrCenter
+        AnchorSideRight.Control = combTreeBarFontName
+        Left = 6
+        Height = 23
+        Top = 47
+        Width = 126
+        Anchors = [akTop, akLeft, akRight]
+        BorderSpacing.Left = 6
+        Caption = 'TreeBar Font'
+        ParentColor = False
+      end
+      object combTreeBarFontName: TComboBox
+        AnchorSideLeft.Control = combNoteBarFontName
+        AnchorSideTop.Control = editTreeBarFontSize
+        AnchorSideTop.Side = asrCenter
+        AnchorSideRight.Control = lablTreeBarFontSize
+        Left = 132
+        Height = 35
+        Top = 41
+        Width = 228
+        Anchors = [akTop, akLeft, akRight]
+        BorderSpacing.Right = 6
+        ItemHeight = 0
+        TabOrder = 2
+      end
+      object lablTreeBarFontSize: TLabel
+        AnchorSideTop.Control = editTreeBarFontSize
+        AnchorSideTop.Side = asrCenter
+        AnchorSideRight.Control = editTreeBarFontSize
+        Left = 366
+        Height = 23
+        Top = 47
+        Width = 36
+        Anchors = [akTop, akRight]
+        BorderSpacing.Left = 6
+        BorderSpacing.Right = 6
+        Caption = '-Size'
+        ParentColor = False
+      end
+      object editTreeBarFontSize: TEdit
+        AnchorSideTop.Control = combWindowFontName
+        AnchorSideTop.Side = asrBottom
+        AnchorSideRight.Control = tabsTheme
+        AnchorSideRight.Side = asrBottom
+        Left = 408
+        Height = 33
+        Top = 42
+        Width = 80
+        Anchors = [akTop, akRight]
+        BorderSpacing.Top = 2
+        BorderSpacing.Right = 6
+        OnMouseWheel = editMouseWheel0
+        TabOrder = 3
+      end
+      object lablNoteBarFontName: TLabel
+        AnchorSideLeft.Control = tabsTheme
+        AnchorSideTop.Control = editNoteBarFontSize
+        AnchorSideTop.Side = asrCenter
+        Left = 6
+        Height = 23
+        Top = 82
+        Width = 108
+        BorderSpacing.Left = 6
+        Caption = 'NoteBar Font'
+        ParentColor = False
+      end
+      object combNoteBarFontName: TComboBox
+        AnchorSideLeft.Control = lablNoteBarFontName
+        AnchorSideLeft.Side = asrBottom
+        AnchorSideTop.Control = editNoteBarFontSize
+        AnchorSideTop.Side = asrCenter
+        AnchorSideRight.Control = lablNoteBarFontSize
+        Left = 132
+        Height = 35
+        Top = 76
+        Width = 228
+        Anchors = [akTop, akLeft, akRight]
+        BorderSpacing.Left = 18
+        BorderSpacing.Right = 6
+        ItemHeight = 0
+        TabOrder = 4
+      end
+      object lablNoteBarFontSize: TLabel
+        AnchorSideTop.Control = editNoteBarFontSize
+        AnchorSideTop.Side = asrCenter
+        AnchorSideRight.Control = editNoteBarFontSize
+        Left = 366
+        Height = 23
+        Top = 82
+        Width = 36
+        Anchors = [akTop, akRight]
+        BorderSpacing.Left = 6
+        BorderSpacing.Right = 6
+        Caption = '-Size'
+        ParentColor = False
+      end
+      object editNoteBarFontSize: TEdit
+        AnchorSideTop.Control = editTreeBarFontSize
+        AnchorSideTop.Side = asrBottom
+        AnchorSideRight.Control = tabsTheme
+        AnchorSideRight.Side = asrBottom
+        Left = 408
+        Height = 33
+        Top = 77
+        Width = 80
+        Anchors = [akTop, akRight]
+        BorderSpacing.Top = 2
+        BorderSpacing.Right = 6
+        OnMouseWheel = editMouseWheel0
+        TabOrder = 5
+      end
+      object lablInfoBarFontName: TLabel
+        AnchorSideLeft.Control = tabsTheme
+        AnchorSideTop.Control = editInfoBarFontSize
+        AnchorSideTop.Side = asrCenter
+        AnchorSideRight.Control = combInfoBarFontName
+        Left = 6
+        Height = 23
+        Top = 117
+        Width = 126
+        Anchors = [akTop, akLeft, akRight]
+        BorderSpacing.Left = 6
+        Caption = 'InfoBar Font'
+        ParentColor = False
+      end
+      object combInfoBarFontName: TComboBox
+        AnchorSideLeft.Control = combNoteBarFontName
+        AnchorSideTop.Control = editInfoBarFontSize
+        AnchorSideTop.Side = asrCenter
+        AnchorSideRight.Control = lablInfoBarFontSize
+        Left = 132
+        Height = 35
+        Top = 111
+        Width = 228
+        Anchors = [akTop, akLeft, akRight]
+        BorderSpacing.Right = 6
+        ItemHeight = 0
+        TabOrder = 6
+      end
+      object lablInfoBarFontSize: TLabel
+        AnchorSideTop.Control = editInfoBarFontSize
+        AnchorSideTop.Side = asrCenter
+        AnchorSideRight.Control = editInfoBarFontSize
+        Left = 366
+        Height = 23
+        Top = 117
+        Width = 36
+        Anchors = [akTop, akRight]
+        BorderSpacing.Left = 6
+        BorderSpacing.Right = 6
+        Caption = '-Size'
+        ParentColor = False
+      end
+      object editInfoBarFontSize: TEdit
+        AnchorSideTop.Control = editNoteBarFontSize
+        AnchorSideTop.Side = asrBottom
+        AnchorSideRight.Control = tabsTheme
+        AnchorSideRight.Side = asrBottom
+        Left = 408
+        Height = 33
+        Top = 112
+        Width = 80
+        Anchors = [akTop, akRight]
+        BorderSpacing.Top = 2
+        BorderSpacing.Right = 6
+        OnMouseWheel = editMouseWheel0
+        TabOrder = 7
+      end
+      object lablExpandSignSize: TLabel
+        AnchorSideLeft.Control = tabsTheme
+        AnchorSideTop.Control = editExpandSignSize
+        AnchorSideTop.Side = asrCenter
+        AnchorSideRight.Control = editExpandSignSize
+        Left = 6
+        Height = 23
+        Top = 162
+        Width = 402
+        Anchors = [akTop, akLeft, akRight]
+        BorderSpacing.Left = 6
+        Caption = 'TreeView Expand Sign size'
+        ParentColor = False
+      end
+      object editExpandSignSize: TEdit
+        AnchorSideTop.Control = editInfoBarFontSize
+        AnchorSideTop.Side = asrBottom
+        AnchorSideRight.Control = tabsTheme
+        AnchorSideRight.Side = asrBottom
+        Left = 408
+        Height = 33
+        Top = 157
+        Width = 80
+        Anchors = [akTop, akRight]
+        BorderSpacing.Top = 12
+        BorderSpacing.Right = 6
+        OnMouseWheel = editMouseWheel0
+        TabOrder = 8
+      end
+      object grpbBrightTheme: TGroupBox
+        AnchorSideLeft.Control = tabsTheme
+        AnchorSideTop.Control = editExpandSignSize
+        AnchorSideTop.Side = asrBottom
+        Left = 18
+        Height = 124
+        Top = 206
+        Width = 169
+        AutoSize = True
+        BorderSpacing.Left = 18
+        BorderSpacing.Top = 16
+        Caption = 'Bright Theme'
+        ClientHeight = 104
+        ClientWidth = 165
+        TabOrder = 9
+        object lablBrightForeColor: TLabel
+          AnchorSideLeft.Control = grpbBrightTheme
+          AnchorSideTop.Control = clrbBrightForeColor
+          AnchorSideTop.Side = asrCenter
+          AnchorSideRight.Control = clrbBrightForeColor
+          Left = 3
+          Height = 23
+          Top = 13
+          Width = 90
+          Anchors = [akTop, akLeft, akRight]
+          BorderSpacing.Left = 3
+          BorderSpacing.Right = 6
+          Caption = 'Fore Color'
+          Constraints.MinWidth = 80
+          ParentColor = False
+        end
+        object clrbBrightForeColor: TColorButton
+          AnchorSideLeft.Side = asrBottom
+          AnchorSideTop.Control = grpbBrightTheme
+          AnchorSideRight.Control = grpbBrightTheme
+          AnchorSideRight.Side = asrBottom
+          Left = 99
+          Height = 25
+          Top = 12
+          Width = 60
+          Anchors = [akTop, akRight]
+          BorderSpacing.Top = 12
+          BorderSpacing.Right = 6
+          BorderWidth = 2
+          ButtonColorSize = 16
+          ButtonColor = clBlack
+        end
+        object lablBrightBackColor: TLabel
+          AnchorSideLeft.Control = grpbBrightTheme
+          AnchorSideTop.Control = clrbBrightBackColor
+          AnchorSideTop.Side = asrCenter
+          AnchorSideRight.Control = clrbBrightBackColor
+          Left = 3
+          Height = 23
+          Top = 44
+          Width = 90
+          Anchors = [akTop, akLeft, akRight]
+          BorderSpacing.Left = 3
+          BorderSpacing.Right = 6
+          Caption = 'Back Color'
+          Constraints.MinWidth = 80
+          ParentColor = False
+        end
+        object clrbBrightBackColor: TColorButton
+          AnchorSideLeft.Side = asrBottom
+          AnchorSideTop.Control = clrbBrightForeColor
+          AnchorSideTop.Side = asrBottom
+          AnchorSideRight.Control = grpbBrightTheme
+          AnchorSideRight.Side = asrBottom
+          Left = 99
+          Height = 25
+          Top = 43
+          Width = 60
+          Anchors = [akTop, akRight]
+          BorderSpacing.Left = 6
+          BorderSpacing.Top = 6
+          BorderSpacing.Right = 6
+          BorderWidth = 2
+          ButtonColorSize = 16
+          ButtonColor = clBlack
+        end
+        object bttnDefBrightTheme: TButton
+          AnchorSideLeft.Control = grpbBrightTheme
+          AnchorSideTop.Control = clrbBrightBackColor
+          AnchorSideTop.Side = asrBottom
+          AnchorSideRight.Control = grpbBrightTheme
+          AnchorSideRight.Side = asrBottom
+          Left = 0
+          Height = 30
+          Top = 74
+          Width = 165
+          Anchors = [akTop, akLeft, akRight]
+          AutoSize = True
+          BorderSpacing.Top = 6
+          Caption = 'Reset to default'
+          Constraints.MinWidth = 160
+          OnClick = bttnDefBrightThemeClick
+          TabOrder = 0
+        end
+      end
+      object grpbDarkTheme: TGroupBox
+        AnchorSideLeft.Control = grpbBrightTheme
+        AnchorSideLeft.Side = asrBottom
+        AnchorSideTop.Control = grpbBrightTheme
+        AnchorSideRight.Side = asrBottom
+        Left = 219
+        Height = 124
+        Top = 206
+        Width = 169
+        AutoSize = True
+        BorderSpacing.Left = 32
+        Caption = 'Dark Theme'
+        ClientHeight = 104
+        ClientWidth = 165
+        TabOrder = 10
+        object lablDarkForeColor: TLabel
+          AnchorSideLeft.Control = grpbDarkTheme
+          AnchorSideTop.Control = clrbDarkForeColor
+          AnchorSideTop.Side = asrCenter
+          AnchorSideRight.Control = clrbDarkForeColor
+          Left = 3
+          Height = 23
+          Top = 13
+          Width = 90
+          Anchors = [akTop, akLeft, akRight]
+          BorderSpacing.Left = 3
+          BorderSpacing.Right = 6
+          Caption = '-Fore Color'
+          Constraints.MinWidth = 80
+          ParentColor = False
+        end
+        object clrbDarkForeColor: TColorButton
+          AnchorSideLeft.Side = asrBottom
+          AnchorSideTop.Control = grpbDarkTheme
+          AnchorSideRight.Control = grpbDarkTheme
+          AnchorSideRight.Side = asrBottom
+          Left = 99
+          Height = 25
+          Top = 12
+          Width = 60
+          Anchors = [akTop, akRight]
+          BorderSpacing.Top = 12
+          BorderSpacing.Right = 6
+          BorderWidth = 2
+          ButtonColorSize = 16
+          ButtonColor = clBlack
+        end
+        object lablDarkBackColor: TLabel
+          AnchorSideLeft.Control = grpbDarkTheme
+          AnchorSideTop.Control = clrbDarkBackColor
+          AnchorSideTop.Side = asrCenter
+          AnchorSideRight.Control = clrbDarkBackColor
+          Left = 3
+          Height = 23
+          Top = 44
+          Width = 90
+          Anchors = [akTop, akLeft, akRight]
+          BorderSpacing.Left = 3
+          BorderSpacing.Right = 6
+          Caption = '-Back Color'
+          Constraints.MinWidth = 80
+          ParentColor = False
+        end
+        object clrbDarkBackColor: TColorButton
+          AnchorSideLeft.Side = asrBottom
+          AnchorSideTop.Control = clrbDarkForeColor
+          AnchorSideTop.Side = asrBottom
+          AnchorSideRight.Control = grpbDarkTheme
+          AnchorSideRight.Side = asrBottom
+          Left = 99
+          Height = 25
+          Top = 43
+          Width = 60
+          Anchors = [akTop, akRight]
+          BorderSpacing.Top = 6
+          BorderSpacing.Right = 6
+          BorderWidth = 2
+          ButtonColorSize = 16
+          ButtonColor = clBlack
+        end
+        object bttnDefDarkTheme: TButton
+          AnchorSideLeft.Control = grpbDarkTheme
+          AnchorSideTop.Control = clrbDarkBackColor
+          AnchorSideTop.Side = asrBottom
+          AnchorSideRight.Control = grpbDarkTheme
+          AnchorSideRight.Side = asrBottom
+          Left = 0
+          Height = 30
+          Top = 74
+          Width = 165
+          Anchors = [akTop, akLeft, akRight]
+          AutoSize = True
+          BorderSpacing.Top = 6
+          Caption = '-Reset to default'
+          Constraints.MinWidth = 160
+          OnClick = bttnDefDarkThemeClick
+          TabOrder = 0
+        end
+      end
+    end
+    object tabsOther: TTabSheet
+      Caption = '-Other'
+      ClientHeight = 386
+      ClientWidth = 494
+      object lablSearchCountLimit: TLabel
+        AnchorSideLeft.Control = tabsOther
+        AnchorSideTop.Control = editSearchCountLimit
+        AnchorSideTop.Side = asrCenter
+        AnchorSideRight.Control = editSearchCountLimit
+        Left = 6
+        Height = 23
+        Top = 11
+        Width = 396
+        Anchors = [akTop, akLeft, akRight]
+        BorderSpacing.Left = 6
+        BorderSpacing.Right = 6
+        Caption = 'The count limit of search results'
+        ParentColor = False
+      end
+      object editSearchCountLimit: TEdit
+        AnchorSideTop.Control = tabsOther
+        AnchorSideRight.Control = tabsOther
+        AnchorSideRight.Side = asrBottom
+        Left = 408
+        Height = 33
+        Top = 6
+        Width = 80
+        Anchors = [akTop, akRight]
+        BorderSpacing.Top = 6
+        BorderSpacing.Right = 6
+        OnMouseWheel = editMouseWheel0
+        TabOrder = 0
+      end
+      object lablRecentCountLimit: TLabel
+        AnchorSideLeft.Control = tabsOther
+        AnchorSideTop.Control = editRecentCountLimit
+        AnchorSideTop.Side = asrCenter
+        AnchorSideRight.Control = editRecentCountLimit
+        Left = 6
+        Height = 23
+        Top = 46
+        Width = 396
+        Anchors = [akTop, akLeft, akRight]
+        BorderSpacing.Left = 6
+        BorderSpacing.Right = 6
+        Caption = 'The count limit of recent searched strings'
+        ParentColor = False
+      end
+      object editRecentCountLimit: TEdit
+        AnchorSideTop.Control = editSearchCountLimit
+        AnchorSideTop.Side = asrBottom
+        AnchorSideRight.Control = tabsOther
+        AnchorSideRight.Side = asrBottom
+        Left = 408
+        Height = 33
+        Top = 41
+        Width = 80
+        Anchors = [akTop, akRight]
+        BorderSpacing.Top = 2
+        BorderSpacing.Right = 6
+        OnMouseWheel = editMouseWheel1
+        TabOrder = 1
+      end
+    end
+  end
+  object bttnOK: TButton
+    AnchorSideTop.Control = bttnCancel
+    AnchorSideTop.Side = asrCenter
+    AnchorSideRight.Control = bttnCancel
+    AnchorSideBottom.Side = asrBottom
+    Left = 392
+    Height = 38
+    Top = 434
+    Width = 100
+    Anchors = [akTop, akRight]
+    BorderSpacing.Right = 32
+    Constraints.MinHeight = 32
+    Constraints.MinWidth = 100
+    OnClick = bttnOKClick
+    TabOrder = 2
+  end
+  object bttnCancel: TButton
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
+    Left = 524
+    Height = 38
+    Top = 434
+    Width = 100
+    Anchors = [akRight, akBottom]
+    BorderSpacing.Right = 16
+    BorderSpacing.Bottom = 8
+    Constraints.MinHeight = 32
+    Constraints.MinWidth = 100
+    ModalResult = 2
+    OnClick = bttnCancelClick
+    TabOrder = 3
+  end
+end

@@ -1,0 +1,270 @@
+object formMain: TformMain
+  Left = 360
+  Height = 380
+  Top = 123
+  Width = 500
+  Caption = 'TreeDB Test'
+  ClientHeight = 380
+  ClientWidth = 500
+  OnCreate = FormCreate
+  LCLVersion = '1.8.0.4'
+  object panlTree: TPanel
+    Left = 0
+    Height = 305
+    Top = 0
+    Width = 500
+    Align = alClient
+    BevelOuter = bvNone
+    ClientHeight = 305
+    ClientWidth = 500
+    TabOrder = 1
+    object trevTree: TTreeView
+      Left = 0
+      Height = 203
+      Top = 0
+      Width = 500
+      Align = alClient
+      PopupMenu = menuTree
+      ScrollBars = ssAutoBoth
+      TabOrder = 0
+    end
+    object spltTree: TSplitter
+      Cursor = crVSplit
+      Left = 0
+      Height = 5
+      Top = 203
+      Width = 500
+      Align = alBottom
+      ResizeAnchor = akBottom
+    end
+    object trevRecy: TTreeView
+      Left = 0
+      Height = 97
+      Top = 208
+      Width = 500
+      Align = alBottom
+      PopupMenu = menuRecy
+      ScrollBars = ssAutoBoth
+      TabOrder = 2
+    end
+  end
+  object panlBottom: TPanel
+    Left = 0
+    Height = 50
+    Top = 305
+    Width = 500
+    Align = alBottom
+    ClientHeight = 50
+    ClientWidth = 500
+    TabOrder = 0
+    object bttnNew: TButton
+      Left = 16
+      Height = 25
+      Top = 12
+      Width = 59
+      Action = actnNew
+      TabOrder = 1
+    end
+    object bttnOpen: TButton
+      Left = 80
+      Height = 25
+      Top = 12
+      Width = 59
+      Action = actnOpen
+      TabOrder = 0
+    end
+    object bttnSave: TButton
+      Left = 144
+      Height = 25
+      Top = 12
+      Width = 59
+      Action = actnSave
+      TabOrder = 2
+    end
+    object bttnClose: TButton
+      Left = 208
+      Height = 25
+      Top = 12
+      Width = 59
+      Action = actnClose
+      TabOrder = 3
+    end
+  end
+  object statMain: TStatusBar
+    Left = 0
+    Height = 25
+    Top = 355
+    Width = 500
+    Panels = <
+      item
+        Width = 280
+      end
+      item
+        Width = 280
+      end
+      item
+        Width = 50
+      end>
+    SimplePanel = False
+  end
+  object openDlg1: TOpenDialog
+    left = 40
+    top = 16
+  end
+  object saveDlg1: TSaveDialog
+    left = 144
+    top = 16
+  end
+  object actlMain: TActionList
+    left = 40
+    top = 88
+    object actnNew: TAction
+      Caption = 'New'
+      ShortCut = 16462
+    end
+    object actnOpen: TAction
+      Caption = 'Open'
+      ShortCut = 16463
+    end
+    object actnSave: TAction
+      Caption = 'Save'
+      ShortCut = 16467
+    end
+    object actnClose: TAction
+      Caption = 'Close'
+      ShortCut = 49239
+    end
+    object actnRename: TAction
+      Caption = 'Rename(&R)'
+      ShortCut = 113
+    end
+    object actnAddToFront: TAction
+      Caption = 'Add To Front(&A)'
+      ShortCut = 24621
+    end
+    object actnAddToBehind: TAction
+      Caption = 'Add To Behind(&S)'
+      ShortCut = 16429
+    end
+    object actnAddToChildFirst: TAction
+      Caption = 'Add To Child First(&Z)'
+      ShortCut = 41005
+    end
+    object actnAddToChildLast: TAction
+      Caption = 'Add To Child Last(&X)'
+      ShortCut = 32813
+    end
+    object actnDeleteNode: TAction
+      Caption = 'Delete Node(&E)'
+      ShortCut = 41006
+    end
+    object actnRecycleNode: TAction
+      Caption = 'Recycle Node(&D)'
+      ShortCut = 24622
+    end
+    object actnRestoreNode: TAction
+      Caption = 'Restore Node(&E)'
+      ShortCut = 16453
+    end
+    object actnEmptyRecycler: TAction
+      Caption = 'Empty Recycler(&T)'
+      ShortCut = 49236
+    end
+    object actnMoveUp: TAction
+      Caption = 'Move Up(I)'
+      ShortCut = 16457
+    end
+    object actnMoveDown: TAction
+      Caption = 'Move Down(K)'
+      ShortCut = 16459
+    end
+    object actnMoveLeft: TAction
+      Caption = 'Move Left(&J)'
+      ShortCut = 16458
+    end
+    object actnMoveRight: TAction
+      Caption = 'Move Right(&L)'
+      ShortCut = 16460
+    end
+  end
+  object menuTree: TPopupMenu
+    left = 144
+    top = 88
+    object pmiRename: TMenuItem
+      Action = actnRename
+    end
+    object pmiSeparatorA01: TMenuItem
+      Caption = '-'
+    end
+    object pmiAddToFront: TMenuItem
+      Action = actnAddToFront
+    end
+    object pmiAddToBehind: TMenuItem
+      Action = actnAddToBehind
+    end
+    object pmiAddToChildFirst: TMenuItem
+      Action = actnAddToChildFirst
+    end
+    object pmiAddToChildLast: TMenuItem
+      Action = actnAddToChildLast
+    end
+    object pmiSeparatorA02: TMenuItem
+      Caption = '-'
+    end
+    object pmiDeleteNode: TMenuItem
+      Action = actnDeleteNode
+    end
+    object pmiRecycleNode: TMenuItem
+      Action = actnRecycleNode
+    end
+    object pmiSeparatorA03: TMenuItem
+      Caption = '-'
+    end
+    object pmiMoveUp: TMenuItem
+      Action = actnMoveUp
+    end
+    object pmiMoveDown: TMenuItem
+      Action = actnMoveDown
+    end
+    object pmiMoveLeft: TMenuItem
+      Action = actnMoveLeft
+    end
+    object pmiMoveRight: TMenuItem
+      Action = actnMoveRight
+    end
+  end
+  object menuRecy: TPopupMenu
+    left = 40
+    top = 160
+    object pmiRenameRecy: TMenuItem
+      Action = actnRename
+    end
+    object pmiSeparatorB01: TMenuItem
+      Caption = '-'
+    end
+    object pmiRestoreNode: TMenuItem
+      Action = actnRestoreNode
+    end
+    object pmiDeleteNodeRecy: TMenuItem
+      Action = actnDeleteNode
+    end
+    object pmiEmptyRecycler: TMenuItem
+      Action = actnEmptyRecycler
+    end
+    object pmiSeparatorB02: TMenuItem
+      Caption = '-'
+    end
+    object pmiMoveUpRecy: TMenuItem
+      Action = actnMoveUp
+    end
+    object pmiMoveDownRecy: TMenuItem
+      Action = actnMoveDown
+    end
+    object pmiMoveLeftRecy: TMenuItem
+      Action = actnMoveLeft
+    end
+    object pmiMoveRightRecy: TMenuItem
+      Action = actnMoveRight
+    end
+  end
+end

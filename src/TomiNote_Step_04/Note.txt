@@ -1,0 +1,8 @@
+[Design Objective 设计目标]
+
+Create, open, save, close database files
+新建、打开、保存、关闭数据库文件
+
+Add, delete node
+添加、删除节点
+

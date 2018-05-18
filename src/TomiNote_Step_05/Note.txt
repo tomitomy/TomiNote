@@ -1,0 +1,6 @@
+[Design Objective 设计目标]
+
+Recycle bin | 回收站
+
+Move node | 移动节点
+

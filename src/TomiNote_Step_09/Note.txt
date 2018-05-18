@@ -1,0 +1,4 @@
+[Design Objective 设计目标]
+
+Multiple nodes' history record | 多节点历史记录
+

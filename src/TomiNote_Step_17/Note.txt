@@ -1,0 +1,4 @@
+[Design Objective 设计目标]
+
+Multi-threaded search, replace, script | 多线程搜索、替换、脚本
+
