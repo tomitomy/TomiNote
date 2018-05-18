@@ -147,8 +147,6 @@ You can use a diff program to compare the differences between each steps. You ca
 
 　
 
-TomiNote v1.1
-
 TomiNote 是一个简单的笔记收集软件，它支持以下特性：
 
 - 目录树
