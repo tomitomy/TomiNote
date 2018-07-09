@@ -1107,9 +1107,10 @@ begin
   // 如果在 Drop 的时候没有按住 Ctrl 或 Alt 键，则将节点移动到目标节点的子节点中
   IntoChildren := not (IsKeyDown(VK_CONTROL) or IsKeyDown(VK_MENU));
 
-  // Move up, move to the front of target. Move down, move to the behind of target.
-  // 向上移动，则移动到目标之前，向下移动，则移动到目标之后
-  if (Sender = Source) and (ToNode <> nil) and (Node.AbsoluteIndex > ToNode.AbsoluteIndex) then
+  // For the sibling nodes, move up, move to the front of target, move down, move to the behind of target.
+  // 对于同级节点，向上移动，则移动到目标之前，向下移动，则移动到目标之后
+  if (Sender = Source) and (not IntoChildren) and (ToNode <> nil) and (Node.Parent = ToNode.Parent) and
+    (Node.AbsoluteIndex > ToNode.AbsoluteIndex) then
     Mode := naInsert;
 
   // If the Shift key is hold down while dropping, change the move mode to "insert to front".
